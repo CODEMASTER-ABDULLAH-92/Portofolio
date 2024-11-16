@@ -6,7 +6,7 @@ import Testimonal from './Component/Testimonal'
 import Footer from './Component/Footer'
 import FooterBelow from './Component/FooterBelow'
 import About from './Component/About'
-import Projects from './Component/projects'
+import Projects from './Component/Projects'
 const App = () => {
   return (
     <div>

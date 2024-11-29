@@ -93,11 +93,19 @@ visible ?
             <a href="#Project"  onClick={()=>setVisible(!visible)} className={`${theme === true ? "text-[--dark-text]" : "text-[--light-text]"} font-semibold`}> Projects</a>
             <a href="#contact" onClick={()=>setVisible(!visible)}  className={`${theme === true ? "text-[--dark-text]" : "text-[--light-text]"} font-semibold`}> Contact</a>
             <a href="#skill" onClick={()=>setVisible(!visible)}  className={`${theme === true ? "text-[--dark-text]" : "text-[--light-text]"} font-semibold`}> Skills</a>
-        <img
+        {/* <img
               src={theme === true ? asset.moon : asset.sun}
-              alt=""
+              onClick={()=>setVisible(!visible)}
               onClick={toggleTheme}
-            />
+            /> */}
+            <img
+  src={theme === true ? asset.moon : asset.sun}
+  onClick={() => {
+    setVisible(!visible);  // Toggle visibility
+    toggleTheme();          // Toggle theme
+  }}
+/>
+
       </ul>
       </div>
     </div>

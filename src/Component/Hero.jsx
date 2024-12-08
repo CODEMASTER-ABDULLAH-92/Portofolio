@@ -12,6 +12,7 @@ const Hero = () => {
         <h1 className={`text-3xl font-bold mb-2 ${theme ? "text-white" : "text-black"}`}>Hi, I'm Abdullah</h1>
         <p className='mb-3 min-w-full'>
           I'm a full stack developer (React.js & Node.js) focused on creating exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem, quo, adipisci eius excepturi nulla quibusdam repellat aut accusantium quasi placeat dolore dolorum nihil rem consequatur ad, sed praesentium. Facere!
         </p>
         
         <div className='flex flex-col gap-1'>

@@ -41,10 +41,12 @@ import link from "/src/assets/link.png"
 import gitpink from "/src/assets/gitpink.png"
 import ava from "/src/assets/ava.webp"
 import pro from "/src/assets/pro.png"
+import redux from "/src/assets/redux.png"
 
 
 export const asset = {
     man,
+    redux,
     ava,
     yt,
     pro,

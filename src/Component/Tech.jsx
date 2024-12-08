@@ -11,7 +11,7 @@ const Tech = () => {
       <div className='flex justify-between items-start gap-12  '>
 
 
-        <div className='grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 gap-y-6 lg:grid-cols-9'>
+        <div className='grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 gap-y-6 lg:grid-cols-10'>
         <div className='flex  justify-between gap-4 items-center  flex-col'>
         <img src={asset.react} alt="" />
         <p>React</p>
@@ -47,6 +47,10 @@ const Tech = () => {
         <div className='flex  justify-between h-[65px] w-[65px] gap-4 items-center  flex-col'>
         <img src={asset.node} alt="" />
         <p>Node.js</p>
+        </div>
+        <div className='flex  justify-between h-[65px] w-[65px] gap-4 items-center  flex-col'>
+        <img src={asset.redux} alt="" />
+        <p>Redux</p>
         </div>
         </div>
       </div>

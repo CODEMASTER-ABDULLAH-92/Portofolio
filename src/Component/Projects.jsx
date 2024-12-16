@@ -39,6 +39,7 @@ const Projects = () => {
   </a>
 
           </div>
+<a href=""></a>
 
           <div
             className={`${
@@ -52,9 +53,12 @@ const Projects = () => {
             target="blank" >
               Gym WebSite
             </a>
+            <a href="https://gym-24-three.vercel.app/">
+
             <p className="pb-6 pad-pra">
             GYM24 is a modern, responsive fitness website built using React and Tailwind CSS. It offers users an intuitive interface to explore gym services, membership plans, workout routines, and health tips. The site is designed for optimal performance on all devices, ensuring a smooth user experience with fast loading times and easy navigation, making fitness accessible anytime, anywhere.
             </p>
+            </a>
 
             <div className="flex flex-wrap gap-2">
               {["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Express", "Git", "Figma"].map((tech) => (
@@ -64,6 +68,7 @@ const Projects = () => {
               ))}
             </div>
           </div>
+
         </div>
 
         <div className="flex flex-col shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] sm:flex-row project-cont justify-start items-start pt-2">
@@ -79,9 +84,12 @@ const Projects = () => {
             target="blank">
               Electra Car
             </a>
+            <a href="https://electra-car-app.vercel.app/">
+
             <p className="pb-6 pad-pra">
 The Electric Car website is a sleek, modern platform built with React and Tailwind CSS, showcasing the latest in electric vehicle technology. It offers users detailed information on electric cars, their features, pricing, and sustainability benefits. Designed for a seamless, eco-friendly experience on all devices.
             </p>
+            </a>
 
             <div className="flex flex-wrap gap-2">
               {["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Express", "Git", "Figma"].map((tech) => (
@@ -104,7 +112,6 @@ The Electric Car website is a sleek, modern platform built with React and Tailwi
   alt="Screenshot of Gym Website"
 />
   </a>
-
           </div>
           
         </div>

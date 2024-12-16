@@ -18,14 +18,6 @@ const About = () => {
           About me
         </button>
         <div className="flex sm:flex-row flex-col-reverse justify-start items-start gap-10">
-          <div className=" w-ful sm:hidden block ">
-              <video
-              src={asset.codeVideo}
-              autoPlay
-              loop // Optional: Loop the video if desired
-              muted // Optional: Mute to comply with autoplay policies
-            className="w-full"></video>
-          </div>
           <div>
             <h2 className={`${theme ? "text-white":"text-black"} text-2xl font-semibold pb-2`}>Curious about me? Here you have it:</h2>
             <p>

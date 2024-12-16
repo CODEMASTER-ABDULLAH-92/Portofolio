@@ -1,6 +1,5 @@
 
 import React, { useContext } from "react";
-import { asset } from "../assets/asset";
 import { ContextApi } from "../Context/ContextApi";
 
 const About = () => {
@@ -34,8 +33,8 @@ const About = () => {
               thinker and enjoy working on products end to end, from ideation
               all the way to development.Finally, some quick bits about me. B.S. in Software Engineering,
               Avid learner, Full-time freelancer. One last
-              thing, I'm available for freelance work, so feel free to reach out
-              and say hello! I promise I don't bite 😉
+              thing, I always work hard, I'm available for freelance work, so feel free to reach out
+              and say hello! I promise I don't bite 😉 
             </p>
           </div>
         </div>

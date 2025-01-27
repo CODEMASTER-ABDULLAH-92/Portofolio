@@ -1,124 +1,164 @@
 import React, { useContext } from "react";
 import { ContextApi } from "../Context/ContextApi";
-import { asset } from "../assets/asset";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const { theme } = useContext(ContextApi);
-  
+
   return (
-    <div id="Project"
+    <div
+      id="Project"
       className={`${
-        theme ? "bg-[--dark-hero-bg] text-[--dark-text]" : "bg-[--light-hero-bg] text-[--light-text]"
-      } flex justify-center py-14 items-center flex-col px-[1vw]  sm:px-[5vw] md:px-[7vw] lg:px-[9vw]`}
+        theme
+          ? "bg-[--dark-hero-bg] text-[--dark-text]"
+          : "bg-[--light-hero-bg] text-[--light-text]"
+      } py-16 px-6 md:px-16 flex flex-col items-center`}
     >
-      <button className="bg-[--dark-btn-bg] text-white rounded-[17px] px-6 py-1">
-        Work
-      </button>
-      <p className="text-xl py-3 text-center">
-        Some of the noteworthy projects I have built:
+      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+        My Projects
+      </h2>
+      <p className="text-lg md:text-xl mb-12 text-center max-w-2xl leading-relaxed">
+        Explore some of the noteworthy projects I have built, showcasing my
+        expertise in modern web development technologies and design practices.
       </p>
-      <div className="flex flex-col gap-10 w-full max-w-4xl">
 
-
-
-      <div className={`  shadow-[0_8px_32px_0_rgba(0,0,0,0.37)]  flex flex-col sm:flex-row project-cont justify-start items-start pt-2 ${
-        theme ? "bg-[--dark-hero-bg] text-[--dark-text]" : "bg-[--light-hero-bg] text-[--light-text]"
-      } `}>
-        
-          <div
-            className={`${
-              theme ? "bg-[--dark-btn-bg]" : "bg-[--ligth-about-bg]"
-            } min-h-[300px] sm:min-h-[420px] w-full sm:w-[520px] rounded-l-lg  sm:flex hidden justify-center items-center px-3`}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+        {/* Project 1 */}
+        <Link
+          to="https://forge-gaming-app.vercel.app/"
+          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
+            theme
+              ? "bg-[--dark-card-bg] text-[--dark-text]"
+              : "bg-[--light-card-bg] text-[--light-text]"
+          }`}
+        >
+          <a
+            href="https://forge-gaming-app.vercel.app/"
+            className="text-2xl font-bold mb-4 hover:text-[#F53E32]"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-         <a href="https://gym-24-three.vercel.app/">
-         <img
-  src={asset.gymome}
-  className="project-img rounded-2xl object-cover h-full p-2 transition-transform duration-300 ease-in-out hover:scale-110"
-  alt="Screenshot of Gym Website"
-/>
-  </a>
-
+            Forge Gaming App
+          </a>
+          <p className="mb-6 text-sm sm:text-base">
+            Forge Gaming App is a MERN stack-powered platform for gamers to
+            explore news, reviews, and resources. It offers personalized
+            profiles, real-time updates, and a sleek interface for a seamless
+            experience.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Express", "Git", "Figma"].map((tech) => (
+              <span
+                key={tech}
+                className="bg-[--dark-btn-bg] text-white px-4 py-1 rounded-full text-sm"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
-<a href=""></a>
+        </Link>
 
-          <div
-            className={`${
-              theme ? "bg-[--dark-card-bg]" : "bg-[--light-about-bg]"
-            } min-h-[300px] sm:min-h-[420px] media-pad w-full sm:w-[520px] p-4 rounded-r-lg`}
+        {/* Additional Projects */}
+        <Link
+          to="https://food-trove-app-h7hl.vercel.app/"
+          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
+            theme
+              ? "bg-[--dark-card-bg] text-[--dark-text]"
+              : "bg-[--light-card-bg] text-[--light-text]"
+          }`}
+        >
+          <a
+            href="https://food-trove-app-h7hl.vercel.app/"
+            className="text-2xl font-bold mb-4 hover:text-[#F53E32]"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <a href="https://gym-24-three.vercel.app/"
-              className={`${
-                theme ? "text-white " : "text-black"
-              } text-2xl font-semibold py-6 mrdia-heading hover:text-[#F53E32]`}
-            target="blank" >
-              Gym WebSite
-            </a>
-            <a href="https://gym-24-three.vercel.app/">
-
-            <p className="pb-6 pad-pra">
-            GYM24 is a modern, responsive fitness website built using React and Tailwind CSS. It offers users an intuitive interface to explore gym services, membership plans, workout routines, and health tips. The site is designed for optimal performance on all devices, ensuring a smooth user experience with fast loading times and easy navigation, making fitness accessible anytime, anywhere.
-            </p>
-            </a>
-
-            <div className="flex flex-wrap gap-2">
-              {["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Express", "Git", "Figma"].map((tech) => (
-                <button key={tech} className="bg-[--dark-btn-bg] text-white rounded-[17px] px-4 py-1">
-                  {tech}
-                </button>
-              ))}
-            </div>
+            FoodTrove
+          </a>
+          <p className="mb-6 text-sm sm:text-base">
+            FoodTrove is a MERN stack app showcasing web development skills.
+            Perfect for food-related services, it integrates modern design and
+            efficient data management.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Express", "Git", "Figma"].map((tech) => (
+              <span
+                key={tech}
+                className="bg-[--dark-btn-bg] text-white px-4 py-1 rounded-full text-sm"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
+        </Link>
 
-        </div>
-
-        <div className="flex flex-col shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] sm:flex-row project-cont justify-start items-start pt-2">
-        <div
-            className={`${
-              theme ? "bg-[--dark-card-bg]" : "bg-[--light-about-bg]"
-            } min-h-[300px] sm:min-h-[420px] media-pad w-full sm:w-[520px] p-4 rounded-r-lg`}
+        <Link
+          to="https://gym-24-three.vercel.app/"
+          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
+            theme
+              ? "bg-[--dark-card-bg] text-[--dark-text]"
+              : "bg-[--light-card-bg] text-[--light-text]"
+          }`}
+        >
+          <a
+            href="https://gym-24-three.vercel.app/"
+            className="text-2xl font-bold mb-4 hover:text-[#F53E32]"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <a href="https://electra-car-app.vercel.app/"
-              className={`${
-                theme ? "text-white" : "text-black"
-              } text-2xl font-semibold py-6 mrdia-heading hover:text-[#F53E32]`}
-            target="blank">
-              Electra Car
-            </a>
-            <a href="https://electra-car-app.vercel.app/">
-
-            <p className="pb-6 pad-pra">
-The Electric Car website is a sleek, modern platform built with React and Tailwind CSS, showcasing the latest in electric vehicle technology. It offers users detailed information on electric cars, their features, pricing, and sustainability benefits. Designed for a seamless, eco-friendly experience on all devices.
-            </p>
-            </a>
-
-            <div className="flex flex-wrap gap-2">
-              {["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Express", "Git", "Figma"].map((tech) => (
-                <button key={tech} className="bg-[--dark-btn-bg] text-white rounded-[17px] px-4 py-1">
-                  {tech}
-                </button>
-              ))}
-            </div>
+            GYM24
+          </a>
+          <p className="mb-6 text-sm sm:text-base">
+            GYM24 is a fitness-focused React app showcasing gym services,
+            membership plans, and workout routines with a seamless and modern
+            UI.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Express", "Git", "Figma"].map((tech) => (
+              <span
+                key={tech}
+                className="bg-[--dark-btn-bg] text-white px-4 py-1 rounded-full text-sm"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
-          <div
-            className={`${
-              theme ? "bg-[--dark-btn-bg]" : "bg-[--light-about-bg]"
-            } min-h-[300px] sm:min-h-[420px] w-full sm:w-[520px] rounded-l-lg sm:flex hidden justify-center items-center px-3`}
+        </Link>
+
+        <Link
+          to="https://electra-car-app.vercel.app/"
+          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
+            theme
+              ? "bg-[--dark-card-bg] text-[--dark-text]"
+              : "bg-[--light-card-bg] text-[--light-text]"
+          }`}
+        >
+          <a
+            href="https://electra-car-app.vercel.app/"
+            className="text-2xl font-bold mb-4 hover:text-[#F53E32]"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <a href="https://electra-car-app.vercel.app/">
-
-            <img
-  src={asset.carHome}
-  className="project-img rounded-2xl object-cover h-full p-2 transition-transform duration-300 ease-in-out hover:scale-110"
-  alt="Screenshot of Gym Website"
-/>
-  </a>
+            Electra Car
+          </a>
+          <p className="mb-6 text-sm sm:text-base">
+            A platform showcasing the latest in electric car technology,
+            including detailed features, pricing, and sustainability benefits.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Express", "Git", "Figma"].map((tech) => (
+              <span
+                key={tech}
+                className="bg-[--dark-btn-bg] text-white px-4 py-1 rounded-full text-sm"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
-          
-        </div>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default Projects;
-

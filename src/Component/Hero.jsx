@@ -11,7 +11,7 @@ const Hero = () => {
       <section className='sm:w-2/3 w-full flex flex-col justify-start items-start'>
         <h1 className={`text-3xl font-bold mb-2 ${theme ? "text-white" : "text-black"}`}>Hi, I'm Abdullah</h1>
         <p className='mb-3 min-w-full'>
-          I'm a full stack developer (React.js & Node.js) focused on creating exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 1years, I still love it as if it was something new.
+          I'm a full stack developer (React.js & Node.js) focused on creating exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 1 years, I still love it as if it was something new.
 
         </p>
         

@@ -42,6 +42,8 @@ import gitpink from "/src/assets/gitpink.png"
 import ava from "/src/assets/ava.webp"
 import pro from "/src/assets/pro.png"
 import redux from "/src/assets/redux.png"
+import p1 from "/src/assets/test1.avif"
+import p2 from "/src/assets/test2.avif"
 
 
 export const asset = {
@@ -50,6 +52,8 @@ export const asset = {
     ava,
     yt,
     pro,
+    p1,
+    p2,
     gitpink,
     link,
     my,

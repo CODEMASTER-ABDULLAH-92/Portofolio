@@ -22,7 +22,7 @@ const Nav = () => {
             theme === true ? "text-[--dark-text]" : "text-[--light-text]"
           } font-semibold text-xl`}
         >
-          Abdullah
+         <a href="/">Abdullah</a>
         </h2>
         {/* links  */}
         <div className="flex justify-center items-center gap-2">

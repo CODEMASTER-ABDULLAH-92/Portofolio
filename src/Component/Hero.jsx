@@ -61,7 +61,7 @@ const Hero = () => {
           <motion.a href="https://www.linkedin.com/in/muhammad-abdullah-671bb7322/" whileHover={{ scale: 1.1 }}>
             <img src={asset.link} className="h-[40px] w-[40px]" alt="LinkedIn" />
           </motion.a>
-          <motion.a href="https://www.instagram.com/masah_dev/" whileHover={{ scale: 1.1 }}>
+          <motion.a href="https://www.instagram.com/masah.dev/" whileHover={{ scale: 1.1 }}>
             <img src={asset.insta} className="h-[40px] w-[40px]" alt="Instagram" />
           </motion.a>
           <motion.a href="https://www.youtube.com/@MasahDev" whileHover={{ scale: 1.1 }}>

@@ -25,7 +25,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
         {/* Project 1 */}
 
-        <Link
+        {/* <Link
   to="https://tro-jobs.vercel.app/"
   className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
     theme
@@ -62,7 +62,7 @@ const Projects = () => {
       </span>
     ))}
   </div>
-</Link>
+</Link> */}
 
         <Link
           to="https://forge-gaming-app.vercel.app/"

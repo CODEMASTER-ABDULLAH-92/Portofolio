@@ -50,6 +50,13 @@ const Nav = () => {
             >
               Contact
             </a>
+            <a href="#Services"
+              className={`${
+                theme === true ? "text-[--dark-text]" : "text-[--light-text]"
+              } font-semibold`}
+            >
+Services
+            </a>
           </ul>
           <div className="hidden sm:flex justify-center items-center gap-2">
             <img
@@ -94,6 +101,13 @@ visible ?
             <a href="#Project"  onClick={()=>setVisible(!visible)} className={`${theme === true ? "text-[--dark-text]" : "text-[--light-text]"} font-semibold`}> Projects</a>
             <a href="#contact" onClick={()=>setVisible(!visible)}  className={`${theme === true ? "text-[--dark-text]" : "text-[--light-text]"} font-semibold`}> Contact</a>
             <a href="#skill" onClick={()=>setVisible(!visible)}  className={`${theme === true ? "text-[--dark-text]" : "text-[--light-text]"} font-semibold`}> Skills</a>
+            <a href="#Services"
+              className={`${
+                theme === true ? "text-[--dark-text]" : "text-[--light-text]"
+              } font-semibold`}
+              onClick={()=>setVisible(!visible)} >
+Services
+            </a>
         {/* <img
               src={theme === true ? asset.moon : asset.sun}
               onClick={()=>setVisible(!visible)}

@@ -52,14 +52,15 @@ export default function ServicesPage() {
   const { theme } = useContext(ContextApi);
 
   return (
+    <>
     <div
       id="Services"
       className={`${
-        theme
+          theme
           ? "bg-[--dark-hero-bg] text-[--dark-text]"
           : "bg-[--light-hero-bg] text-[--light-text]"
-      } py-16 px-6 md:px-16 flex flex-col items-center`}
-    >
+        } py-16 px-6 md:px-16 flex flex-col items-center`}
+        >
       <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Services</h2>
       <p className="text-lg md:text-xl mb-12 text-center max-w-2xl leading-relaxed">
         We offer a variety of web solutions to bring your ideas to life.
@@ -67,14 +68,14 @@ export default function ServicesPage() {
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
         {services.map((service, index) => (
-          <div
+            <div
             key={index}
             className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
-              theme
+                theme
                 ? "bg-[--dark-card-bg] text-[--dark-text]"
                 : "bg-[--light-card-bg] text-[--light-text]"
             }`}
-          >
+            >
             <div className="text-4xl mb-4 text-blue-300">{service.icon}</div>
             <h3 className="text-2xl font-bold mb-2 hover:text-[#F53E32]">{service.title}</h3>
             <p className="mb-6 text-sm sm:text-base">{service.desc}</p>
@@ -82,5 +83,7 @@ export default function ServicesPage() {
         ))}
       </div>
     </div>
+
+        </>
   );
 }

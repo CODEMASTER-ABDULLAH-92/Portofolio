@@ -7,6 +7,7 @@ import Footer from './Component/Footer'
 import FooterBelow from './Component/FooterBelow'
 import About from './Component/About'
 import Projects from './Component/Projects'
+import ServicesPage from './Component/Servies'
 const App = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const App = () => {
       <Tech/>
       <Projects/>
       <Testimonal/>
+      <ServicesPage/>
       <Footer/>
       <FooterBelow/>
     </div>

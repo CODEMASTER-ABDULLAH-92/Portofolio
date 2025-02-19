@@ -8,9 +8,10 @@ const Nav = () => {
   const { theme, toggleTheme } = useContext(ContextApi);
   return (
     <div
+    
       className={`${
         theme === true ? "bg-[--dark-hero-bg]" : "bg-[--light-hero-bg]"
-      } sticky top-0 border-opacity-18 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] backdrop-blur-[20px]`}
+      } sticky top-0 z-10 border-opacity-18 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] backdrop-blur-[20px]`}
     >
       <div className={`${
           theme === true ? "bg-[--dark-hero-bg]" : "bg-[--light-hero-bg]"

@@ -75,7 +75,7 @@ const Hero = () => {
         <motion.img 
           src={asset.abdullah} 
           alt="Abdullah" 
-          className="w-[280px] h-[300px] object-cover border-b-4 border-l-4 p-2 border-gray-600 rounded-lg shadow-lg"
+          className="w-[280px] h-[300px] object-cover object-top border-b-4 border-l-4 p-2 border-gray-600 rounded-lg shadow-lg"
           loading="lazy"
           initial={{ opacity: 0, scale: 0.9 }} 
           animate={{ opacity: 1, scale: 1 }} 

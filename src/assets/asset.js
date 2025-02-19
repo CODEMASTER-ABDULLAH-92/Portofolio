@@ -1,13 +1,3 @@
-import man from "/src/assets/1man.png"
-import figma from "/src/assets/figma.svg"
-import db from "/src/assets/db.svg"
-import exp_light from "/src/assets/express_light.svg"
-import exp_night from "/src/assets/exp_night.svg"
-import git from "/src/assets/git.svg"
-import javaScript from "/src/assets/javaScript.svg"
-import next from "/src/assets/next.svg"
-import react from "/src/assets/react.svg"
-import tailwind from "/src/assets/tailwind.svg"
 import burger_light from "/src/assets/bur_light.png"
 import burger from "/src/assets/burger.png"
 import call_icon from "/src/assets/call.png"
@@ -28,57 +18,34 @@ import twt_dark from "/src/assets/twitter_dark.png"
 import bg from "/src/assets/bg.png"
 import cross_light from "/src/assets/cross_white.png"
 import cross_gray from "/src/assets/cross_gray.png"
-import abdullah from "/src/assets/abdullah.jpeg"
+import abdullah from "/src/assets/abdullahdev.jpeg"
 import call_dark from "/src/assets/Icon.png"
-import node from "/src/assets/node.svg"
-import codeVideo from "/src/assets/cod01.mp4"
-import carHome from "/src/assets/c.png"
-import gymome from "/src/assets/g.png"
 import my from "/src/assets/my.png"
 import yt from "/src/assets/yt.png"
 import insta from "/src/assets/insta.png"
 import link from "/src/assets/link.png"
 import gitpink from "/src/assets/gitpink.png"
-import ava from "/src/assets/ava.webp"
-import pro from "/src/assets/pro.png"
-import redux from "/src/assets/redux.png"
 import p1 from "/src/assets/test1.avif"
 import p2 from "/src/assets/test2.avif"
 
-
 export const asset = {
-    man,
-    redux,
-    ava,
     yt,
-    pro,
     p1,
     p2,
     gitpink,
     link,
     my,
     insta,
-    gymome,
-    carHome,
-    codeVideo,
-    node,
     call_dark,
     twt_dark,
-    exp_night,
     bg,
     git_light,
     git_dark,
+
     figma_dark,
     abdullah,
     cross_gray,
     cross_light,
-    figma,
-    db,
-    exp_light,
-    git,
-    javaScript,
-    next,
-    react,
     burger,
     burger_light,
     call_icon,
@@ -93,5 +60,4 @@ export const asset = {
     moon,
     figma_light,
     figma_dark,
-    tailwind,
 }

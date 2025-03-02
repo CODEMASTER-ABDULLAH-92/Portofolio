@@ -90,7 +90,7 @@ const Tech = () => {
             <p className='text-xl text-center font-medium'>The skills, tools, and technologies I am really good at:</p>
             <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center'>
                 {skills.map((skill, index) => (
-                    <div key={index} className='flex flex-col items-center justify-center gap-3 p-4 rounded-lg shadow-lg bg-opacity-50 hover:scale-110 transition-transform duration-300 cursor-pointer'>
+                    <div key={index} className={`flex flex-col items-center justify-center gap-3 p-4 rounded-lg shadow-lg bg-opacity-50 hover:scale-110 transition-transform duration-300  cursor-pointer ${theme ? "bg-gray-700":""}`}>
                         <div className='text-5xl'>{skill.icon}</div>
                         <p className='text-lg font-semibold'>{skill.name}</p>
                     </div>

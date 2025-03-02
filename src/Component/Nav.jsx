@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { asset } from "../assets/asset";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ContextApi } from "../Context/ContextApi";
 const Nav = () => {
   const [visible, setVisible] = useState(false);
@@ -64,15 +64,21 @@ Services
               alt=""
               onClick={toggleTheme}
             />
-            <button
-              className={`${
-                theme
-                  ? "text-[--light-text] bg-[--light-hero-bg]"
-                  : "text-[--dark-text] bg-[--dark-hero-bg]"
-              } font-semibold px-7 py-2 rounded-xl`}
-            >
-              Download CV
-            </button>
+  <a
+  href="/abdullah.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`${
+    theme
+      ? "text-[--light-text] bg-[--light-hero-bg]"
+      : "text-[--dark-text] bg-[--dark-hero-bg]"
+  } font-semibold px-7 py-2 rounded-xl`}
+>
+  Download CV
+</a>
+
+
+
           </div>
         </div>
         {

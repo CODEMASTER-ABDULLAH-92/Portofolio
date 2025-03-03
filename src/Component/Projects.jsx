@@ -119,7 +119,7 @@ const Projects = () => {
           >
             FoodTrove
           </a>
-          <Link to="https://github.com/CODEMASTER-ABDULLAH-92/Forge-Gaming-App" 
+          <Link to="https://github.com/CODEMASTER-ABDULLAH-92/FoodTrove" 
   className="absolute right-4 top-4  text-white px-4 py-2 rounded-md bg-gray-700 transition"
 >
   Source Code

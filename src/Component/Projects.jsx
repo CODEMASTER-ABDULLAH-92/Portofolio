@@ -25,8 +25,8 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
         {/* Project 1 */}
 
-        {/* <Link
-  to="https://tro-jobs.vercel.app/"
+ <Link
+  to="https://mesh-dev.vercel.app/"
   className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
     theme
       ? "bg-[--dark-card-bg] text-[--dark-text]"
@@ -40,17 +40,15 @@ const Projects = () => {
 </Link>
 
   <a
-    href="https://tro-jobs.vercel.app/"
+    href="https://mesh-dev.vercel.app/"
     className="text-2xl font-bold mb-4 hover:text-[#F53E32]"
     target="_blank"
     rel="noopener noreferrer"
   >
-    Tro Jobs
+Mesh Dev
   </a>
   <p className="mb-6 text-sm sm:text-base">
-    Tro Jobs is a MERN stack-powered job portal that connects employers and job
-    seekers. It features user authentication, job listings, and an intuitive
-    dashboard for seamless job applications.
+  Masah Dev is a DSA learning platform designed to help programmers master Data Structures and Algorithms. Built with modern web technologies, it provides an engaging and interactive experience for learners.
   </p>
   <div className="flex flex-wrap gap-2">
     {["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Git", "Figma"].map((tech) => (
@@ -62,7 +60,7 @@ const Projects = () => {
       </span>
     ))}
   </div>
-</Link> */}
+</Link> 
 
         <Link
           to="https://forge-gaming-app.vercel.app/"

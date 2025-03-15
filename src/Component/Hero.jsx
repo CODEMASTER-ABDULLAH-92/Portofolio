@@ -30,7 +30,7 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            {" " } <Link to="https://mash-dev92.vercel.app/"> Masah Dev 🔗</Link>
+            {" " } <Link to="https://mesh-dev.vercel.app/"> Masah Dev 🔗</Link>
           </motion.span>
           , a platform dedicated to helping learners master Data Structures and Algorithms (DSA).
           As a full-stack developer with expertise in{" "}

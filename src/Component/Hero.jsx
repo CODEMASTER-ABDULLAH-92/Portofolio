@@ -23,16 +23,16 @@ const Hero = () => {
 
         {/* Description with Animated Masah Dev */}
         <p className="mb-3 text-lg leading-relaxed">
-          I'm the founder of 
+          {/* I'm the founder of 
           <motion.span 
             className="font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            {" " } <Link to="https://mesh-dev.vercel.app/"> Masah Dev 🔗</Link>
-          </motion.span>
-          , a platform dedicated to helping learners master Data Structures and Algorithms (DSA).
+            {" " } <Link to="https://mesh-dev.vercel.app/"> Mash Dev 🔗</Link>
+          </motion.span> */}
+          {/* , a platform dedicated to helping learners master Data Structures and Algorithms (DSA). */}
           As a full-stack developer with expertise in{" "}
           <strong className="text-[#10B981]">React.js & Node.js</strong>, I build intuitive and scalable applications that make learning efficient and enjoyable.
         </p>
@@ -49,7 +49,7 @@ const Hero = () => {
               animate={{ scale: [1, 1.2, 1] }} 
               transition={{ repeat: Infinity, duration: 1.5 }}
             />
-            <p className="ml-4 text-lg">Currently Building Masah Dev 🚀</p>
+            <p className="ml-4 text-lg">Currently Building Mash Dev 🚀</p>
           </div>
         </div>
 
@@ -60,12 +60,6 @@ const Hero = () => {
           </motion.a>
           <motion.a href="https://www.linkedin.com/in/muhammad-abdullah-671bb7322/" whileHover={{ scale: 1.1 }}>
             <img src={asset.link} className="h-[40px] w-[40px]" alt="LinkedIn" />
-          </motion.a>
-          <motion.a href="https://www.instagram.com/mashdeve/" whileHover={{ scale: 1.1 }}>
-            <img src={asset.insta} className="h-[40px] w-[40px]" alt="Instagram" />
-          </motion.a>
-          <motion.a href="https://www.youtube.com/@MasahDev" whileHover={{ scale: 1.1 }}>
-            <img src={asset.yt} className="h-[40px] w-[40px]" alt="YouTube" />
           </motion.a>
         </div>
       </section>

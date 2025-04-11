@@ -25,7 +25,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
         {/* Project 1 */}
 
- <Link
+ {/* <Link
   to="https://mesh-dev.vercel.app/"
   className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
     theme
@@ -60,46 +60,9 @@ Mesh Dev
       </span>
     ))}
   </div>
-</Link> 
+</Link>  */}
 
-        <Link
-          to="https://forge-gaming-app.vercel.app/"
-          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
-            theme
-              ? "bg-[--dark-card-bg] text-[--dark-text]"
-              : "bg-[--light-card-bg] text-[--light-text]"
-          }`}
-        >
-          <a
-            href="https://forge-gaming-app.vercel.app/"
-            className="text-2xl font-bold mb-4 hover:text-[#F53E32]"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Forge App
-          </a>
-          <Link to="https://github.com/CODEMASTER-ABDULLAH-92/Forge-Gaming-App" 
-  className="absolute right-4 top-4  text-white px-4 py-2 rounded-md bg-gray-700 transition"
->
-  Source Code
-</Link>
-          <p className="mb-6 text-sm sm:text-base">
-            Forge Gaming App is a MERN stack-powered platform for gamers to
-            explore news, reviews, and resources. It offers personalized
-            profiles, real-time updates, and a sleek interface for a seamless
-            experience.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Express", "Git", "Figma"].map((tech) => (
-              <span
-                key={tech}
-                className="bg-[--dark-btn-bg] text-white px-4 py-1 rounded-full text-sm"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </Link>
+       
         {/* Additional Projects */}
         <Link
           to="https://food-trove-app-h7hl.vercel.app/"
@@ -201,6 +164,44 @@ Mesh Dev
           <p className="mb-6 text-sm sm:text-base">
             A platform showcasing the latest in electric car technology,
             including detailed features, pricing, and sustainability benefits.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Express", "Git", "Figma"].map((tech) => (
+              <span
+                key={tech}
+                className="bg-[--dark-btn-bg] text-white px-4 py-1 rounded-full text-sm"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </Link>
+        <Link
+          to="https://forge-gaming-app.vercel.app/"
+          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
+            theme
+              ? "bg-[--dark-card-bg] text-[--dark-text]"
+              : "bg-[--light-card-bg] text-[--light-text]"
+          }`}
+        >
+          <a
+            href="https://forge-gaming-app.vercel.app/"
+            className="text-2xl font-bold mb-4 hover:text-[#F53E32]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Forge App
+          </a>
+          <Link to="https://github.com/CODEMASTER-ABDULLAH-92/Forge-Gaming-App" 
+  className="absolute right-4 top-4  text-white px-4 py-2 rounded-md bg-gray-700 transition"
+>
+  Source Code
+</Link>
+          <p className="mb-6 text-sm sm:text-base">
+            Forge Gaming App is a MERN stack-powered platform for gamers to
+            explore news, reviews, and resources. It offers personalized
+            profiles, real-time updates, and a sleek interface for a seamless
+            experience.
           </p>
           <div className="flex flex-wrap gap-2">
             {["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Express", "Git", "Figma"].map((tech) => (

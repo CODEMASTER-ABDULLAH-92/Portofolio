@@ -48,8 +48,6 @@ const Footer = () => {
       <div className='flex items-center gap-1 my-3'>
 <a href="https://github.com/CODEMASTER-ABDULLAH-92"> <img src={asset.gitpink} className='h-[48px] w-[48px]' alt="" /></a>
       <a href="https://www.linkedin.com/in/muhammad-abdullah-671bb7322/"> <img src={asset.link} alt="" /> </a>    
-      <a href="https://www.instagram.com/masah.dev/"> <img src={asset.insta} alt="" /></a>
-          <img src={asset.yt} alt="" />
         </div>
     </div>
   );

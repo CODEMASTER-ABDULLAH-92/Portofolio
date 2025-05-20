@@ -1,8 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
 import { asset } from "../assets/asset";
 import { ContextApi } from "../Context/ContextApi";
-import {useGSAP} from "@gsap/react"
-import gsap from "gsap";
 const Nav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, toggleTheme } = useContext(ContextApi);
@@ -114,7 +112,7 @@ const navRef = useRef();
           <div
             className={`md:hidden mt-4 rounded-xl p-6 ${
               theme ? "bg-[--dark-hero-bg]" : "bg-[--light-hero-bg]"
-            } shadow-lg`}
+            } min-h-screen shadow-lg`}
           >
             <ul className="flex flex-col space-y-4">
               {navItems.map((item) => (

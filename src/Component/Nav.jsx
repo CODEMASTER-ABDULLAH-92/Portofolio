@@ -1,7 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { asset } from "../assets/asset";
 import { ContextApi } from "../Context/ContextApi";
-
+import {useGSAP} from "@gsap/react"
+import gsap from "gsap";
 const Nav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, toggleTheme } = useContext(ContextApi);
@@ -14,6 +15,7 @@ const Nav = () => {
     { id: "contact", label: "Contact" }
   ];
 
+const navRef = useRef();
   return (
     <header
       className={`${
@@ -37,7 +39,6 @@ const Nav = () => {
           >
             Abdullah-dev.
           </a>
-
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <ul className="flex space-x-6">
@@ -54,6 +55,7 @@ const Nav = () => {
                 </li>
               ))}
             </ul>
+
 
             <div className="flex items-center space-x-4 ml-4">
               <button

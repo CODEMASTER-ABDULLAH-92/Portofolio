@@ -1,86 +1,146 @@
-// import { FaLaptopCode, FaHotel, FaChartLine, FaUserGraduate, FaGlobe, FaProjectDiagram } from 'react-icons/fa';
-// import { MdWeb } from 'react-icons/md';
-
-// const services = [
-//   { icon: <FaLaptopCode />, title: "Full-Stack Applications", desc: "End-to-end development with modern technologies." },
-//   { icon: <MdWeb />, title: "Custom Web Pages", desc: "Tailor-made web pages for businesses and individuals." },
-//   { icon: <FaGlobe />, title: "Static & Dynamic Websites", desc: "Fast, responsive, and scalable websites." },
-//   { icon: <FaHotel />, title: "Hotel Management Systems", desc: "Streamlined solutions for hotel operations." },
-//   { icon: <FaChartLine />, title: "Dashboards & Analytics", desc: "Data-driven insights with interactive dashboards." },
-//   { icon: <FaProjectDiagram />, title: "Portfolio & Travel Websites", desc: "Showcase your work or plan trips efficiently." },
-//   { icon: <FaUserGraduate />, title: "Student Management Systems", desc: "Complete educational platform solutions." },
-//   { icon: <MdWeb />, title: "And Much More!", desc: "Innovative solutions for every digital need." }
-// ];
-
-// export default function ServicesPage() {
-//   return (
-//     <div className="min-h-screen bg-gradient-to-r from-blue-900 to-purple-900 text-white py-16 px-6">
-//       <div className="max-w-7xl mx-auto text-center">
-//         <h2 className="text-4xl font-extrabold mb-6 text-gray-200">Our Services</h2>
-//         <p className="text-lg text-gray-300 mb-12">We offer a variety of web solutions to bring your ideas to life.</p>
-//         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-//           {services.map((service, index) => (
-//             <div key={index} className="bg-white bg-opacity-10 p-6 rounded-xl shadow-lg hover:bg-opacity-20 transition-all duration-300">
-//               <div className="text-4xl text-blue-300 mb-4">{service.icon}</div>
-//               <h3 className="text-xl font-semibold text-gray-100">{service.title}</h3>
-//               <p className="text-gray-300 mt-2">{service.desc}</p>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
 import { useContext } from "react";
 import { ContextApi } from "../Context/ContextApi";
 import { FaLaptopCode, FaHotel, FaChartLine, FaUserGraduate, FaGlobe, FaProjectDiagram } from "react-icons/fa";
 import { MdWeb } from "react-icons/md";
 
 const services = [
-  { icon: <FaLaptopCode />, title: "Full-Stack Applications", desc: "End-to-end development with modern technologies." },
-  { icon: <MdWeb />, title: "Custom Web Pages", desc: "Tailor-made web pages for businesses and individuals." },
-  { icon: <FaGlobe />, title: "Static & Dynamic Websites", desc: "Fast, responsive, and scalable websites." },
-  { icon: <FaHotel />, title: "Hotel Management Systems", desc: "Streamlined solutions for hotel operations." },
-  { icon: <FaChartLine />, title: "Dashboards & Analytics", desc: "Data-driven insights with interactive dashboards." },
-  { icon: <FaProjectDiagram />, title: "Portfolio & Travel Websites", desc: "Showcase your work or plan trips efficiently." },
-  { icon: <FaUserGraduate />, title: "Student Management Systems", desc: "Complete educational platform solutions." },
-  { icon: <MdWeb />, title: "And Much More!", desc: "Innovative solutions for every digital need." }
+  { 
+    icon: <FaLaptopCode />, 
+    title: "Full-Stack Applications", 
+    desc: "End-to-end development with modern technologies for seamless user experiences.",
+    color: "text-blue-400"
+  },
+  { 
+    icon: <MdWeb />, 
+    title: "Custom Web Pages", 
+    desc: "Tailor-made web solutions designed to reflect your unique brand identity.",
+    color: "text-purple-400"
+  },
+  { 
+    icon: <FaGlobe />, 
+    title: "Static & Dynamic Websites", 
+    desc: "Blazing-fast, responsive websites that scale with your business needs.",
+    color: "text-green-400"
+  },
+  { 
+    icon: <FaHotel />, 
+    title: "Hotel Management Systems", 
+    desc: "Comprehensive solutions to streamline all aspects of hotel operations.",
+    color: "text-red-400"
+  },
+  { 
+    icon: <FaChartLine />, 
+    title: "Dashboards & Analytics", 
+    desc: "Interactive data visualization tools to drive informed decisions.",
+    color: "text-yellow-400"
+  },
+  { 
+    icon: <FaProjectDiagram />, 
+    title: "Portfolio & Travel Websites", 
+    desc: "Beautiful showcases for your work or personalized travel experiences.",
+    color: "text-pink-400"
+  },
+  { 
+    icon: <FaUserGraduate />, 
+    title: "Student Management Systems", 
+    desc: "Complete educational platforms with advanced administration tools.",
+    color: "text-indigo-400"
+  },
+  { 
+    icon: <MdWeb />, 
+    title: "And Much More!", 
+    desc: "Innovative digital solutions tailored to your specific requirements.",
+    color: "text-teal-400"
+  }
 ];
 
 export default function ServicesPage() {
   const { theme } = useContext(ContextApi);
 
   return (
-    <>
-    
-    <div
+    <section 
       id="Services"
-      className={`${theme ? "bg-[--dark-about-bg] text-[white]"  : "bg-[--ligth-about-bg] text-black"}  py-16 px-6 md:px-16 flex flex-col items-center`}
-        >
-      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Services</h2>
-      <p className="text-lg md:text-xl mb-12 text-center max-w-2xl leading-relaxed">
-        We offer a variety of web solutions to bring your ideas to life.
-      </p>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
-        {services.map((service, index) => (
+      className={`${theme ? "bg-[--dark-about-bg]" : "bg-[--light-about-bg]"} 
+        py-20 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 transition-colors duration-300`}
+    >
+      <div className="max-w-7xl mx-auto">
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent 
+            bg-gradient-to-r from-blue-400 to-purple-500">
+            Our Services
+          </h2>
+          <p className={`text-lg md:text-xl max-w-3xl mx-auto leading-relaxed 
+            ${theme ? "text-gray-300" : "text-gray-600"}`}>
+            We craft exceptional digital experiences tailored to your unique needs, 
+            combining innovative technology with stunning design.
+          </p>
+        </div>
+        
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {services.map((service, index) => (
             <div
-            key={index}
-            className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
-                theme
-                ? "bg-[--dark-card-bg] text-[--dark-text]"
-                : "bg-[--light-card-bg] text-[--light-text]"
-            }`}
+              key={index}
+              className={`relative overflow-hidden rounded-xl p-8 transition-all duration-500 
+                ${theme ? "bg-[--dark-card-bg] border-gray-700" : "bg-white border-gray-200"} 
+                border hover:border-transparent shadow-lg hover:shadow-xl group`}
             >
-            <div className="text-4xl mb-4 text-blue-300">{service.icon}</div>
-            <h3 className="text-2xl font-bold mb-2 hover:text-[#F53E32]">{service.title}</h3>
-            <p className="mb-6 text-sm sm:text-base">{service.desc}</p>
-          </div>
-        ))}
+              {/* Gradient Border Effect */}
+              <div className={`absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-100 
+                transition-opacity duration-500 rounded-xl 
+                ${index % 2 === 0 ? "from-blue-500 to-purple-600" : "from-amber-500 to-pink-500"}`}></div>
+              
+              <div className="relative z-10 h-full flex flex-col">
+                {/* Icon with animated background */}
+                <div className={`w-16 h-16 rounded-2xl mb-6 flex items-center justify-center 
+                  ${service.color} ${theme ? "bg-gray-800" : "bg-gray-100"} 
+                  text-3xl group-hover:scale-110 transition-transform duration-300`}>
+                  {service.icon}
+                </div>
+                
+                <h3 className={`text-xl font-bold mb-3 group-hover:text-white transition-colors duration-300 
+                  ${theme ? "text-white" : "text-gray-800"}`}>
+                  {service.title}
+                </h3>
+                
+                <p className={`text-sm md:text-base mb-6 group-hover:text-gray-200 transition-colors duration-300 
+                  ${theme ? "text-gray-400" : "text-gray-600"}`}>
+                  {service.desc}
+                </p>
+                
+                {/* Learn More Link */}
+                <div className="mt-auto">
+                  <span className={`text-sm font-medium ${service.color} flex items-center 
+                    group-hover:translate-x-2 transition-transform duration-300`}>
+                    Learn more
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        {/* CTA Section */}
+        <div className={`mt-20 text-center p-8 rounded-2xl 
+          ${theme ? "bg-gray-800" : "bg-gray-50"} max-w-4xl mx-auto`}>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Ready to bring your project to life?
+          </h3>
+          <p className={`text-lg mb-6 max-w-2xl mx-auto 
+            ${theme ? "text-gray-400" : "text-gray-600"}`}>
+            Let's discuss how we can create something amazing together.
+          </p>
+          <button className={`px-8 py-3 rounded-lg font-medium transition-all duration-300 
+            ${theme ? "bg-blue-600 hover:bg-blue-700" : "bg-blue-500 hover:bg-blue-600"} 
+            text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1`}>
+            Get Started Now
+          </button>
+        </div>
       </div>
-    </div>
-
-        </>
+    </section>
   );
 }

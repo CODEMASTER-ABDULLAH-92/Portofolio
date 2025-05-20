@@ -1,13 +1,45 @@
-import React, { useContext } from 'react';
+
+import React, { useContext, useRef } from 'react';
+import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
+import { SiTypescript, SiNextdotjs, SiExpress, SiMongodb, SiTailwindcss, SiGraphql, SiDocker, SiGit, SiJavascript } from "react-icons/si";
 import { ContextApi } from '../Context/ContextApi';
 import { asset } from '../assets/asset';
 import { motion } from 'framer-motion';
 import {Link} from 'react-router-dom'
+import {useGSAP} from '@gsap/react';
+import gsap from 'gsap'
 const Hero = () => {
   const { theme } = useContext(ContextApi);
+  const skillRef = useRef(null);
+  const skills = [
+    { name: "React.js", icon: <FaReact className="text-blue-500" /> },
+    { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
+    { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+    { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
+    { name: "Next.js", icon: <SiNextdotjs className="text-black dark:text-white" /> },
+    { name: "Express.js", icon: <SiExpress className="text-gray-800 dark:text-gray-300" /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-500" /> },
+    // { name: "GraphQL", icon: <SiGraphql className="text-pink-600" /> },
+    // { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
+    { name: "Git", icon: <SiGit className="text-orange-600" /> },
+    { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
+  ];
+
+useGSAP(() => {
+  gsap.to(skillRef.current, {
+    y: () => -skillRef.current.scrollHeight + 30, // Adjust 30 to match your h-[30px]
+    duration: 10,
+    repeat: -1,
+    ease: "none",
+    yoyo:true
+  });
+});
+
   return (
+
+    <div className=' flex flex-col '>
+
     <div className={`py-20 flex flex-col-reverse justify-center sm:justify-between sm:flex-row px-[4vw] sm:px-[5vw] md:px-[7vw] lg:px-[9vw] ${theme ? "bg-[--dark-hero-bg] text-[--dark-text]" : "bg-[--light-hero-bg] text-[--light-text]"}`}>
-      
       {/* Left Section */}
       <section className="sm:w-2/3 w-full flex flex-col justify-start items-start">
         
@@ -31,10 +63,61 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.5 }}
           >
             {" " } <Link to="https://mesh-dev.vercel.app/"> Mash Dev 🔗</Link>
-          </motion.span> */}
-          {/* , a platform dedicated to helping learners master Data Structures and Algorithms (DSA). */}
-          As a full-stack developer with expertise in{" "}
-          <strong className="text-[#10B981]">React.js & Node.js</strong>, I build intuitive and scalable applications that make learning efficient and enjoyable.
+          </motion.span> 
+ , a platform dedicated to helping learners master Data Structures and Algorithms (DSA). */}
+
+As a full-stack developer with expertise in {" "}
+<strong className="text-[#10B981] inline-flex overflow-hidden h-[30px]">
+  <div ref={skillRef} className="flex flex-col">
+    {skills.map((skill, index) => (
+      <span key={index}>
+        <div className='flex items-center gap-1'>
+        {skill.icon}
+        {skill.name}
+
+        </div>
+
+      </span>
+    ))}
+  </div>
+</strong>
+ <br /> I build intuitive and scalable applications that make learning efficient and enjoyable.
+
+
+
+{/* Animate the skills in horizontally  */}
+
+{/* As a full-stack developer with expertise in{" "}
+<strong className="text-[#10B981] inline-flex overflow-hidden">
+  <motion.div 
+    ref={skillRef} 
+    className="flex whitespace-nowrap items-center gap-2"
+    animate={{ x: ["0%", "-100%"] }}
+    transition={{ 
+      duration: 20,
+      repeat: Infinity,
+      ease: "linear"
+    }}
+  >
+
+    {[...skills, ...skills].map((skill, index) => (
+      <motion.span 
+        key={index} 
+        className="inline-flex items-center gap-1 px-1"
+        whileHover={{ scale: 1.1 }}
+      >
+        {skill.icon}
+        {skill.name}
+        {index < skills.length * 2 - 1 && ","}
+      </motion.span>
+    ))}
+  </motion.div>
+</strong> */}
+
+
+
+
+
         </p>
         
         {/* Location & Availability */}
@@ -64,6 +147,17 @@ const Hero = () => {
         </div>
       </section>
 
+
+
+
+
+
+
+
+
+
+
+
       {/* Right Section - Image */}
       <div className="flex flex-col justify-center items-center">
         <motion.img 
@@ -77,6 +171,8 @@ const Hero = () => {
         />
       </div>
     </div>
+    </div>
+
   );
 };
 

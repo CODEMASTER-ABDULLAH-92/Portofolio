@@ -8,14 +8,15 @@ const Nav = () => {
   const { theme, toggleTheme } = useContext(ContextApi);
   return (
     <div
-    
       className={`${
-        theme === true ? "bg-[--dark-hero-bg]" : "bg-[--light-hero-bg]"
-      } sticky top-0 z-10 border-opacity-18 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] backdrop-blur-[20px]`}
+        theme === true ? "bg-[--dark-hero-bg]" : "bg-[--light-hero-bg] shadow-[0_8px_32px_0_rgba(0,0,0,0.37)]"
+      } sticky top-0 z-10 border-opacity-18 py-[20px] backdrop-blur-[20px]`}
     >
+
+
       <div className={`${
           theme === true ? "bg-[--dark-hero-bg]" : "bg-[--light-hero-bg]"
-        }  flex justify-between items-center py-4 px-[4vw] sm:px-[5vw] md:px-[7vw]   inset-0 bg-gradient-to-br from-white/10 to-transparent   lg:px-[9vw]`}
+        }  flex justify-between items-center border-[1px] rounded-[15px] border-zinc-400  py-[20px] inset-0 bg-gradient-to-br from-white/10 to-transparent px-[10px] lg:mx-[9vw]`}
       >
         {/* logo  */}
         <h2
@@ -28,7 +29,6 @@ const Nav = () => {
         {/* links  */}
         <div className="flex justify-center items-center gap-2">
           <ul className="hidden sm:flex justify-center items-center gap-2">
-            <a href="#about" className={`${theme === true ? "text-[--dark-text]" : "text-[--light-text]"} font-semibold`}> About</a>
             <a href="#skill"
               className={`${
                 theme === true ? "text-[--dark-text]" : "text-[--light-text]"
@@ -97,6 +97,9 @@ visible ?
         />
       }
       </div>
+
+
+
 
       <div>
         {/* Side nav */}

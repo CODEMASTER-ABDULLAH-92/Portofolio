@@ -1,28 +1,47 @@
 
-import React, { useContext, useRef } from 'react';
-import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiExpress, SiMongodb, SiTailwindcss, SiGraphql, SiDocker, SiGit, SiJavascript } from "react-icons/si";
-import { ContextApi } from '../Context/ContextApi';
-import { asset } from '../assets/asset';
-import { motion } from 'framer-motion';
-import {Link} from 'react-router-dom'
-import {useGSAP} from '@gsap/react';
-import gsap from 'gsap'
+import React, { useContext, useRef } from "react";
+import {
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaCube
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiExpress,
+  SiMongodb,
+  SiTailwindcss,
+  SiGit,
+  SiJavascript,
+  SiCplusplus,
+} from "react-icons/si";
+import { ContextApi } from "../Context/ContextApi";
+import { asset } from "../assets/asset";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 const Hero = () => {
   const { theme } = useContext(ContextApi);
   const skillRef = useRef(null);
+
   const skills = [
+    { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
     { name: "React.js", icon: <FaReact className="text-blue-500" /> },
     { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
     { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
-    { name: "Next.js", icon: <SiNextdotjs className="text-black dark:text-white" /> },
     { name: "Express.js", icon: <SiExpress className="text-gray-800 dark:text-gray-300" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-500" /> },
-    // { name: "GraphQL", icon: <SiGraphql className="text-pink-600" /> },
-    // { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
+    { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
+    { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
+    { name: "C++", icon: <SiCplusplus className="text-blue-600" /> },
+    { name: "OOP", icon: <FaCube className="text-purple-600" /> },
     { name: "Git", icon: <SiGit className="text-orange-600" /> },
-    { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
+    { name: "Next.js", icon: <SiNextdotjs className="text-black dark:text-white" /> },
   ];
 
 useGSAP(() => {
@@ -31,7 +50,10 @@ useGSAP(() => {
     duration: 10,
     repeat: -1,
     ease: "none",
-    yoyo:true
+    yoyo:true,
+    delay:0.2,
+    stagger:0.2,
+    repeatDelay:0
   });
 });
 
@@ -55,7 +77,7 @@ useGSAP(() => {
 
         {/* Description with Animated Masah Dev */}
         <p className="mb-3 text-lg leading-relaxed">
-          {/* I'm the founder of 
+          I'm the founder of 
           <motion.span 
             className="font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -64,7 +86,7 @@ useGSAP(() => {
           >
             {" " } <Link to="https://mesh-dev.vercel.app/"> Mash Dev 🔗</Link>
           </motion.span> 
- , a platform dedicated to helping learners master Data Structures and Algorithms (DSA). */}
+ , a platform dedicated to helping learners master Data Structures and Algorithms (DSA).
 
 As a full-stack developer with expertise in {" "}
 <strong className="text-[#10B981] inline-flex overflow-hidden h-[30px]">

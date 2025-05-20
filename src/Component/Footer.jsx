@@ -10,7 +10,7 @@ const Footer = () => {
   };
 
   return (
-    <div className={`${theme ? "bg-[--dark-about-bg] text-[white]"  : "bg-[--ligth-about-bg] text-black"} py-20 flex flex-col justify-center items-center gap-5 px-[1vw] sm:px-[5vw] md:px-[7vw] lg:px-[9vw] `} id='contact'>
+    <div className={`${theme ? "bg-[--dark-hero-bg] text-[--dark-text]" : "bg-[--light-hero-bg] text-[--light-text]"}   py-20 flex flex-col justify-center items-center gap-5 px-[1vw] sm:px-[5vw] md:px-[7vw] lg:px-[9vw] `} id='contact'>
       <button className='bg-[--dark-btn-bg] text-white rounded-[17px] px-6 py-1'>Get In Touch</button>
       <p className='text-center'>What’s next? Feel free to reach out to me if you're looking for a developer, <br />have a query, or simply want to connect.</p>
       

@@ -6,7 +6,7 @@ import { asset } from '../assets/asset';
 const Testimonal = () => {
     const { theme } = useContext(ContextApi);
   return (
-    <div className={`${theme ? "bg-[--dark-about-bg] text-[--dark-text]" : "bg-[--ligth-about-bg] text-[--light-text]"} flex justify-center items-center flex-col gap-10 px-[1vw] sm:px-[5vw] md:px-[7vw] py-28 lg:px-[9vw]`}>
+    <div className={`${theme ? "bg-[--dark-hero-bg] text-[--dark-text]" : "bg-[--light-hero-bg] text-[--light-text]"}  flex justify-center items-center flex-col gap-10 px-[1vw] sm:px-[5vw] md:px-[7vw] py-28 lg:px-[9vw]`}>
       <button className='bg-[--dark-btn-bg] text-white rounded-[17px] px-6 py-1'>Testimonail</button>
       <p className='text-xl text-center'>Nice things people have said about me:</p>
       <div className='flex sm:flex-row flex-col gap-4 justify-center items-center'>

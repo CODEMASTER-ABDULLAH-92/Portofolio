@@ -1,45 +1,71 @@
-
+import { FaBullseye, FaRegComments, FaClock } from "react-icons/fa";
 import React, { useContext } from "react";
 import { ContextApi } from "../Context/ContextApi";
 
 const About = () => {
   const { theme } = useContext(ContextApi);
+  
+  const features = [
+    {
+      icon: FaBullseye,
+      title: "Quality Focus",
+      description: "Delivering high-quality results while maintaining attention to every detail. Our commitment to excellence ensures your project meets the highest standards with pixel-perfect precision and robust functionality.",
+      iconBg: theme ? "bg-blue-900" : "bg-blue-100",
+      iconColor: theme ? "text-blue-300" : "text-blue-600"
+    },
+    {
+      icon: FaRegComments,
+      title: "Reliable Communication",
+      description: "Keeping you updated at every step to ensure transparency and clarity. We provide regular progress reports, quick responses, and clear documentation to keep you informed throughout the development process.",
+      iconBg: theme ? "bg-green-900" : "bg-green-100",
+      iconColor: theme ? "text-green-300" : "text-green-600"
+    },
+    {
+      icon: FaClock,
+      title: "Timely Delivery",
+      description: "Meeting deadlines without compromising on quality. Our agile workflow and efficient project management ensure your product is delivered on schedule, every time.",
+      iconBg: theme ? "bg-purple-900" : "bg-purple-100",
+      iconColor: theme ? "text-purple-300" : "text-purple-600"
+    }
+  ];
+
   return (
-    <div id="about">
-      <div
-        className={`${
-          theme
-            ? "bg-[--dark-about-bg] text-[--dark-text]"
-            : "bg-[--ligth-about-bg] text-[--light-text]"
-        } flex justify-center items-center gap-10 flex-col px-[1vw] sm:px-[5vw] md:px-[7vw] py-28 lg:px-[9vw]`}
-      >
-        <button className="bg-[--dark-btn-bg] text-white rounded-[17px] px-6 py-1">
-          About me
-        </button>
-        <div className="flex sm:flex-row flex-col-reverse justify-start items-start gap-10">
-          <div>
-            <h2 className={`${theme ? "text-white":"text-black"} text-2xl font-semibold pb-2`}>Curious about me? Here you have it:</h2>
-            <p>
-              I'm a passionate, self-proclaimed developer who specializes in full
-              stack development (React.js & Node.js). I am very enthusiastic
-              about bringing the technical and visual aspects of digital
-              products to life. User experience, pixel perfect design, and
-              writing clear, readable, highly performant code matters to me. I
-              began my journey as a web developer in 2023, and since then, I've
-              continued to grow and evolve as a developer, taking on new
-              challenges and learning the latest technologies along the way.
-              Now, in my early thirties, 2 years after starting my web
-              development journey,I am very much a progressive
-              thinker and enjoy working on products end to end, from ideation
-              all the way to development.Finally, some quick bits about me. B.S. in Software Engineering,
-              Avid learner, Full-time freelancer. One last
-              thing, I always work hard, I'm available for freelance work, so feel free to reach out
-              and say hello! I promise I don't bite 😉 
-            </p>
-          </div>
+    <section id="about" className={`${theme ? "bg-[--dark-about-bg]" : "bg-[--light-about-bg]"} transition-colors duration-300`}>
+      <div className={`${theme ? "text-[--dark-text]" : "text-[--light-text]"} container mx-auto px-4 sm:px-6 py-28`}>
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <button className={`${theme ? "bg-[--dark-btn-bg]" : "bg-[--light-btn-bg]"} text-white rounded-[17px] px-6 py-1 font-medium mb-4 transition-colors duration-300`}>
+            About me
+          </button>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">My Core Principles</h2>
+          <p className="max-w-2xl mx-auto text-lg opacity-90">
+            These values guide every project I undertake, ensuring exceptional results and satisfied clients.
+          </p>
+        </div>
+
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {features.map((feature, index) => (
+            <div 
+              key={index}
+              className={`${theme ? "bg-[--dark-card-bg]" : "bg-white"} p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1`}
+            >
+              <div className="flex items-center mb-4">
+                <div className={`${feature.iconBg} p-3 rounded-full mr-4`}>
+                  <feature.icon className={`${feature.iconColor} text-2xl`} />
+                </div>
+                <h3 className={`text-xl font-bold ${theme ? "text-white" : "text-gray-800"}`}>
+                  {feature.title}
+                </h3>
+              </div>
+              <p className={`${theme ? "text-gray-300" : "text-gray-600"}`}>
+                {feature.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

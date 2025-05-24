@@ -28,15 +28,15 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
         {/* Project 1 */}
 
- {/* <Link
+ <Link
   to="https://mesh-dev.vercel.app/"
-  className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
+  className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform duration-500 transform hover:scale-105 ${
     theme
       ? "bg-[--dark-card-bg] text-[--dark-text]"
       : "bg-[--light-card-bg] text-[--light-text]"
   }`}
 >
-<Link to="https://github.com/CODEMASTER-ABDULLAH-92/TroJobs" 
+<Link to="https://github.com/CODEMASTER-ABDULLAH-92/Mesh-Dev" 
   className="absolute right-4 top-4  text-white px-4 py-2 rounded-md bg-gray-700 transition"
 >
   Source Code
@@ -51,10 +51,10 @@ const Projects = () => {
 Mesh Dev
   </a>
   <p className="mb-6 text-sm sm:text-base">
-  Masah Dev is a DSA learning platform designed to help programmers master Data Structures and Algorithms. Built with modern web technologies, it provides an engaging and interactive experience for learners.
+  Mash Dev is a DSA learning platform designed to help programmers master Data Structures and Algorithms. Built with modern web technologies, it provides an engaging and interactive experience for learners.
   </p>
   <div className="flex flex-wrap gap-2">
-    {["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Git", "Figma"].map((tech) => (
+    {["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Git", "Figma","Next.js"].map((tech) => (
       <span
         key={tech}
         className="bg-[--dark-btn-bg] text-white px-4 py-1 rounded-full text-sm"
@@ -63,11 +63,14 @@ Mesh Dev
       </span>
     ))}
   </div>
-</Link>  */}
+</Link>
+
+
+
 
 <Link
           to="https://forge-gaming-app.vercel.app/"
-          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
+          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform duration-500  transform hover:scale-105 ${
             theme
               ? "bg-[--dark-card-bg] text-[--dark-text]"
               : "bg-[--light-card-bg] text-[--light-text]"
@@ -106,7 +109,7 @@ Mesh Dev
         {/* Additional Projects */}
         <Link
           to="https://food-trove-app-h7hl.vercel.app/"
-          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
+          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform duration-500 transform hover:scale-105 ${
             theme
               ? "bg-[--dark-card-bg] text-[--dark-text]"
               : "bg-[--light-card-bg] text-[--light-text]"
@@ -146,7 +149,7 @@ Mesh Dev
 
         <Link
           to="https://electra-car-app.vercel.app/"
-          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
+          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform duration-500 transform hover:scale-105 ${
             theme
               ? "bg-[--dark-card-bg] text-[--dark-text]"
               : "bg-[--light-card-bg] text-[--light-text]"
@@ -182,7 +185,7 @@ Mesh Dev
         </Link>
         <Link
           to="https://gym-24-three.vercel.app/"
-          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 ${
+          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform duration-500 transform hover:scale-105 ${
             theme
               ? "bg-[--dark-card-bg] text-[--dark-text]"
               : "bg-[--light-card-bg] text-[--light-text]"

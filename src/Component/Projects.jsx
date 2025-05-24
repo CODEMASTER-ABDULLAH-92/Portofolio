@@ -10,7 +10,7 @@ const Projects = () => {
 
 
  
-      id="Project"
+      id="project"
       className={`${
         theme
           ? "bg-[--dark-about-bg] text-[--dark-text]"

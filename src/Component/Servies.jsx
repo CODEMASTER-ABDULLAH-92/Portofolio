@@ -59,7 +59,7 @@ export default function ServicesPage() {
 
   return (
     <section 
-      id="Services"
+      id="services"
       className={`${theme ? "bg-[--dark-about-bg]" : "bg-[--light-about-bg]"} 
         py-20 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 transition-colors duration-300`}
     >
@@ -124,22 +124,6 @@ export default function ServicesPage() {
           ))}
         </div>
         
-        {/* CTA Section */}
-        <div className={`mt-20 text-center p-8 rounded-2xl 
-          ${theme ? "bg-gray-800" : "bg-gray-50"} max-w-4xl mx-auto`}>
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Ready to bring your project to life?
-          </h3>
-          <p className={`text-lg mb-6 max-w-2xl mx-auto 
-            ${theme ? "text-gray-400" : "text-gray-600"}`}>
-            Let's discuss how we can create something amazing together.
-          </p>
-          <button className={`px-8 py-3 rounded-lg font-medium transition-all duration-300 
-            ${theme ? "bg-blue-600 hover:bg-blue-700" : "bg-blue-500 hover:bg-blue-600"} 
-            text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1`}>
-            Get Started Now
-          </button>
-        </div>
       </div>
     </section>
   );

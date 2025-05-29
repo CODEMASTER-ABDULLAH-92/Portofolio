@@ -1,9 +1,31 @@
 import React, { useContext } from "react";
 import { ContextApi } from "../Context/ContextApi";
 import { Link } from "react-router-dom";
+import { asset } from "../assets/asset";
 
 const Projects = () => {
   const { theme } = useContext(ContextApi);
+
+  const projects = [
+    {
+      title: "CodeCraft Portfolio",
+      description: "A modern developer portfolio showcasing my skills, projects, and professional journey. Built with performance and aesthetics in mind, featuring smooth animations and responsive design.",
+      image: asset.port,
+      demoUrl: "https://abdullah-kohl.vercel.app/",
+      codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/Portofolio",
+      technologies: ["React.js", "GSAP", "Tailwind CSS", "Node.js", "MongoDB", "Express" , "Figma", "Vite"],
+      accentColor: "#3B82F6" // blue
+    },
+    {
+      title: "ScholarPath Finder",
+      description: "A comprehensive scholarship application platform helping students discover and apply for educational funding opportunities worldwide with smart matching algorithms.",
+      image: asset.scholar,
+      demoUrl: "https://scholar-ship-app.vercel.app/",
+      codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/ScholarShip-App",
+      technologies: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express", "JWT Auth"],
+      accentColor: "#10B981" // emerald
+    }
+  ];
 
   return (
     <div
@@ -12,255 +34,100 @@ const Projects = () => {
         theme
           ? "bg-[--dark-about-bg] text-[--dark-text]"
           : "bg-[--light-about-bg] text-[--light-text]"
-      } transition-colors duration-300  py-16 px-6 md:px-16 flex flex-col items-center`}
+      } transition-colors duration-300 py-16 px-6 md:px-16`}
     >
-      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-        My Projects
-      </h2>
-      <p className="text-lg md:text-xl mb-12 text-center max-w-2xl leading-relaxed">
-        Explore some of the noteworthy projects I have built, showcasing my
-        expertise in modern web development technologies and design practices.
-      </p>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
-        {/* Project 1 */}
-
-        <Link
-          to="https://mesh-dev.vercel.app/"
-          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform duration-500 transform hover:scale-105 ${
-            theme
-              ? "bg-[--dark-card-bg] text-[--dark-text]"
-              : "bg-[--light-card-bg] text-[--light-text]"
-          }`}
-        >
-          <Link
-            to="https://github.com/CODEMASTER-ABDULLAH-92/Mesh-Dev"
-            className="absolute right-4 top-4  text-white px-4 py-2 rounded-md bg-gray-700 transition"
-          >
-            Source Code
-          </Link>
-
-          <a
-            href="https://mesh-dev.vercel.app/"
-            className="text-2xl font-bold mb-4 hover:text-[#F53E32]"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mesh Dev
-          </a>
-          <p className="mb-6 text-sm sm:text-base">
-            Mash Dev is a DSA learning platform designed to help programmers
-            master Data Structures and Algorithms. Built with modern web
-            technologies, it provides an engaging and interactive experience for
-            learners.
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
+            My Projects
+          </h2>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
+            Explore my featured projects that demonstrate my expertise in modern web development, 
+            with attention to design, performance, and user experience.
           </p>
-          <div className="flex flex-wrap gap-2">
-            {[
-              "React.js",
-              "Node.js",
-              "Express.js",
-              "MongoDB",
-              "Tailwind CSS",
-              "Git",
-              "Figma",
-              "Next.js",
-            ].map((tech) => (
-              <span
-                key={tech}
-                className="bg-[--dark-btn-bg] text-white px-4 py-1 rounded-full text-sm"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </Link>
+        </div>
 
-        <Link
-          to="https://forge-gaming-app.vercel.app/"
-          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform duration-500  transform hover:scale-105 ${
-            theme
-              ? "bg-[--dark-card-bg] text-[--dark-text]"
-              : "bg-[--light-card-bg] text-[--light-text]"
-          }`}
-        >
-          <a
-            href="https://forge-gaming-app.vercel.app/"
-            className="text-2xl font-bold mb-4 hover:text-[#F53E32]"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Forge App
-          </a>
-          <Link
-            to="https://github.com/CODEMASTER-ABDULLAH-92/Forge-Gaming-App"
-            className="absolute right-4 top-4  text-white px-4 py-2 rounded-md bg-gray-700 transition"
-          >
-            Source Code
-          </Link>
-          <p className="mb-6 text-sm sm:text-base">
-            Forge Gaming App is a MERN stack-powered platform for gamers to
-            explore news, reviews, and resources. It offers personalized
-            profiles, real-time updates, and a sleek interface for a seamless
-            experience.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {[
-              "React.js",
-              "Node.js",
-              "Tailwind CSS",
-              "MongoDB",
-              "Express",
-              "Git",
-              "Figma",
-            ].map((tech) => (
-              <span
-                key={tech}
-                className="bg-[--dark-btn-bg] text-white px-4 py-1 rounded-full text-sm"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </Link>
-        {/* Additional Projects */}
-        <Link
-          to="https://food-trove-app-h7hl.vercel.app/"
-          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform duration-500 transform hover:scale-105 ${
-            theme
-              ? "bg-[--dark-card-bg] text-[--dark-text]"
-              : "bg-[--light-card-bg] text-[--light-text]"
-          }`}
-        >
-          <a
-            href="https://food-trove-app-h7hl.vercel.app/"
-            className="text-2xl font-bold mb-4 hover:text-[#F53E32]"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            FoodTrove
-          </a>
-          <Link
-            to="https://github.com/CODEMASTER-ABDULLAH-92/FoodTrove"
-            className="absolute right-4 top-4  text-white px-4 py-2 rounded-md bg-gray-700 transition"
-          >
-            Source Code
-          </Link>
-          <p className="mb-6 text-sm sm:text-base">
-            FoodTrove is a MERN stack app showcasing web development skills.
-            Perfect for food-related services, it integrates modern design and
-            efficient data management.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {[
-              "React.js",
-              "Node.js",
-              "Tailwind CSS",
-              "MongoDB",
-              "Express",
-              "Git",
-              "Figma",
-            ].map((tech) => (
-              <span
-                key={tech}
-                className="bg-[--dark-btn-bg] text-white px-4 py-1 rounded-full text-sm"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </Link>
-
-        <Link
-          to="https://electra-car-app.vercel.app/"
-          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform duration-500 transform hover:scale-105 ${
-            theme
-              ? "bg-[--dark-card-bg] text-[--dark-text]"
-              : "bg-[--light-card-bg] text-[--light-text]"
-          }`}
-        >
-          <a
-            href="https://electra-car-app.vercel.app/"
-            className="text-2xl font-bold mb-4 hover:text-[#F53E32]"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Electra Car
-          </a>
-          <Link
-            to="https://github.com/CODEMASTER-ABDULLAH-92/Car-App"
-            className="absolute right-4 top-4  text-white px-4 py-2 rounded-md bg-gray-700 transition"
-          >
-            Source Code
-          </Link>
-          <p className="mb-6 text-sm sm:text-base">
-            A platform showcasing the latest in electric car technology,
-            including detailed features, pricing, and sustainability benefits.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {[
-              "React.js",
-              "Node.js",
-              "Tailwind CSS",
-              "MongoDB",
-              "Express",
-              "Git",
-              "Figma",
-            ].map((tech) => (
-              <span
-                key={tech}
-                className="bg-[--dark-btn-bg] text-white px-4 py-1 rounded-full text-sm"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </Link>
-        <Link
-          to="https://gym-24-three.vercel.app/"
-          className={`shadow-lg rounded-lg p-6 flex flex-col justify-between transition-transform duration-500 transform hover:scale-105 ${
-            theme
-              ? "bg-[--dark-card-bg] text-[--dark-text]"
-              : "bg-[--light-card-bg] text-[--light-text]"
-          }`}
-        >
-          <a
-            href="https://gym-24-three.vercel.app/"
-            className="text-2xl font-bold mb-4 hover:text-[#F53E32]"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GYM24
-          </a>
-          <Link
-            to="https://github.com/CODEMASTER-ABDULLAH-92/CompleteGYM"
-            className="absolute right-4 top-4  text-white px-4 py-2 rounded-md bg-gray-700 transition"
-          >
-            Source Code
-          </Link>
-          <p className="mb-6 text-sm sm:text-base">
-            GYM24 is a fitness-focused React app showcasing gym services,
-            membership plans, and workout routines with a seamless and modern
-            UI.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {[
-              "React.js",
-              "Node.js",
-              "Tailwind CSS",
-              "MongoDB",
-              "Express",
-              "Git",
-              "Figma",
-            ].map((tech) => (
-              <span
-                key={tech}
-                className="bg-[--dark-btn-bg] text-white px-4 py-1 rounded-full text-sm"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div 
+              key={index}
+              className={`relative group overflow-hidden rounded-2xl shadow-xl ${
+                theme ? "bg-[--dark-card-bg]" : "bg-[--light-card-bg]"
+              } transition-all duration-500 hover:shadow-2xl`}
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black opacity-20 z-10"></div>
+              
+              {/* Project Image */}
+              <div className="h-64 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              
+              {/* Project Content */}
+              <div className="p-6 relative z-20">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-2xl font-bold group-hover:text-[#F53E32] transition-colors duration-300">
+                    <a 
+                      href={project.demoUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      {project.title}
+                    </a>
+                  </h3>
+                  <a
+                    href={project.codeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`px-3 py-1 rounded-full text-xs font-medium ${
+                      theme ? "bg-gray-700 text-white" : "bg-gray-200 text-gray-800"
+                    } hover:bg-gray-600 hover:text-white transition-colors`}
+                  >
+                    Source Code
+                  </a>
+                </div>
+                
+                <p className="mb-6 text-sm sm:text-base opacity-90 leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 rounded-full text-xs font-medium"
+                      style={{
+                        backgroundColor: theme 
+                          ? `${project.accentColor}20` // 20% opacity
+                          : `${project.accentColor}10`,
+                        color: theme 
+                          ? project.accentColor 
+                          : `${project.accentColor}DD`,
+                        border: theme 
+                          ? `1px solid ${project.accentColor}30`
+                          : `1px solid ${project.accentColor}20`
+                      }}
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              
+              {/* Hover effect */}
+              <div 
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{
+                  background: `radial-gradient(circle at center, ${project.accentColor}10 0%, transparent 70%)`
+                }}
+              ></div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

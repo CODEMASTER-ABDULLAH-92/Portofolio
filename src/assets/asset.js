@@ -24,11 +24,15 @@ import my from "/src/assets/my.png"
 import yt from "/src/assets/yt.png"
 import insta from "/src/assets/insta.png"
 import link from "/src/assets/link.png"
+import scholar from "/src/assets/scholar.png"
+import port from "/src/assets/port.png"
 import gitpink from "/src/assets/gitpink.png"
 import p1 from "/src/assets/test1.avif"
 import p2 from "/src/assets/test2.avif"
 
 export const asset = {
+    port,
+    scholar,
     yt,
     p1,
     p2,

@@ -24,7 +24,16 @@ const Projects = () => {
       codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/ScholarShip-App",
       technologies: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express", "JWT Auth"],
       accentColor: "#10B981" // emerald
+    },{
+      title: "Code365",
+      description: "An aesthetic learning platform for mastering Data Structures, Algorithms, and core programming languages using interactive 3D models and modern UI.",
+      image: asset.code365, // replace with your actual image asset variable
+      demoUrl: "https://mesh-dev.vercel.app/", // update if you have a live URL
+      codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/mesh-dev", // update if you have a GitHub repo
+      technologies: ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express"],
+      accentColor: "#3B82F6" // a vibrant bluish tone from Tailwind palette
     }
+    
   ];
 
   return (

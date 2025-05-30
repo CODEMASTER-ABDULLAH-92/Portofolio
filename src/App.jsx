@@ -37,7 +37,7 @@ const App = () => {
       <div 
         ref={cursorRef} 
         id='cursor' 
-        className='h-[40px] w-[40px] bg-red-500 rounded-full fixed pointer-events-none top-[50%] left-[50%] z-50 mix-blend-difference'
+        className='h-[40px] hidden md:block w-[40px] bg-red-500 rounded-full fixed pointer-events-none top-[50%] left-[50%] z-50 mix-blend-difference'
       ></div>
 
       {/* Page content */}

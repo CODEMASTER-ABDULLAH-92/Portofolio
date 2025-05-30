@@ -13,6 +13,7 @@ import {
   SiExpress,
   SiMongodb,
   SiTailwindcss,
+  SiPython, 
   SiGit,
   SiJavascript,
   SiCplusplus,
@@ -42,6 +43,9 @@ const Hero = () => {
     { name: "OOP", icon: <FaCube className="text-purple-600" /> },
     { name: "Git", icon: <SiGit className="text-orange-600" /> },
     { name: "Next.js", icon: <SiNextdotjs className="text-black dark:text-white" /> },
+
+{ name: "Python", icon: <SiPython className="text-yellow-500" /> }
+
   ];
 
 useGSAP(() => {
@@ -77,14 +81,14 @@ useGSAP(() => {
 
         {/* Description with Animated Masah Dev */}
         <p className="mb-3 text-lg leading-relaxed">
-          I'm the founder of 
+          I'm the builder of 
           <motion.span 
-            className="font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent"
+            className="font-bold bg-gradient-to-r text-2xl from-purple-500 to-blue-500 bg-clip-text text-transparent"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            {" " } <Link to="https://mesh-dev.vercel.app/"> Mash Dev 🔗</Link>
+            {" " } <Link to="https://mesh-dev.vercel.app/"> code365 🔗</Link>
           </motion.span> 
  , a platform dedicated to helping learners master Data Structures and Algorithms (DSA).
 
@@ -93,7 +97,7 @@ As a full-stack developer with expertise in {" "}
   <div ref={skillRef} className="flex flex-col">
     {skills.map((skill, index) => (
       <span key={index}>
-        <div className='flex items-center gap-1'>
+        <div className='flex text-2xl items-center gap-1'>
         {skill.icon}
         {skill.name}
 
@@ -151,8 +155,8 @@ As a full-stack developer with expertise in {" "}
           <div className="flex items-center">
             <motion.div 
               className="w-2 h-2 bg-[#10B981] ml-2 rounded-full"
-              animate={{ scale: [1, 1.2, 1] }} 
-              transition={{ repeat: Infinity, duration: 1.5 }}
+              animate={{ scale: [1, 1.5, 1] }} 
+              transition={{ repeat: Infinity, duration: 1.9 }}
             />
             <p className="ml-4 text-lg">Currently Building Mash Dev 🚀</p>
           </div>

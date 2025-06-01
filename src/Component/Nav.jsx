@@ -33,7 +33,7 @@ const navRef = useRef();
             href="/"
             className={`text-2xl font-bold ${
               theme ? "text-[--dark-text]" : "text-[--light-text]"
-            } hover:opacity-80 transition-opacity`}
+            } hover:opacity-80 transition-opacity duration-400 to-blue-600 from-red-400 bg-gradient-to-r  bg-clip-text text-transparent`}
           >
             Abdullah-dev.
           </a>

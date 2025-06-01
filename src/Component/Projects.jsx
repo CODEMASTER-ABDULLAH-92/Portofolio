@@ -67,7 +67,7 @@ const Projects = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black opacity-20 z-10"></div>
               
               {/* Project Image */}
-              <div className="h-64 overflow-hidden">
+              <div className=" overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title}

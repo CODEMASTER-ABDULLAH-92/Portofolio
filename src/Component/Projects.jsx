@@ -8,15 +8,6 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "CodeCraft Portfolio",
-      description: "A modern developer portfolio showcasing my skills, projects, and professional journey. Built with performance and aesthetics in mind, featuring smooth animations and responsive design.",
-      image: asset.port,
-      demoUrl: "https://abdullah-kohl.vercel.app/",
-      codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/Portofolio",
-      technologies: ["React.js", "GSAP", "Tailwind CSS", "Node.js", "MongoDB", "Express" , "Figma", "Vite"],
-      accentColor: "#3B82F6" // blue
-    },
-    {
       title: "ScholarPath Finder",
       description: "A comprehensive scholarship application platform helping students discover and apply for educational funding opportunities worldwide with smart matching algorithms.",
       image: asset.scholar,
@@ -32,7 +23,16 @@ const Projects = () => {
       codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/mesh-dev", // update if you have a GitHub repo
       technologies: ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express"],
       accentColor: "#3B82F6" // a vibrant bluish tone from Tailwind palette
-    }
+    },
+    {
+      title: "CodeCraft Portfolio",
+      description: "A modern developer portfolio showcasing my skills, projects, and professional journey. Built with performance and aesthetics in mind, featuring smooth animations and responsive design.",
+      image: asset.port,
+      demoUrl: "https://abdullah-kohl.vercel.app/",
+      codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/Portofolio",
+      technologies: ["React.js", "GSAP", "Tailwind CSS", "Node.js", "MongoDB", "Express" , "Figma", "Vite"],
+      accentColor: "#3B82F6" // blue
+    },
     
   ];
 
@@ -92,7 +92,7 @@ const Projects = () => {
                     href={project.codeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`px-3 py-1 rounded-full text-xs font-medium ${
+                    className={`px-[20px] py-[11px] rounded-full text-xs font-bold font-medium ${
                       theme ? "bg-gray-700 text-white" : "bg-gray-200 text-gray-800"
                     } hover:bg-gray-600 hover:text-white transition-colors`}
                   >

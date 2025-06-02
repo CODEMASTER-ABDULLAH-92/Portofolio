@@ -19,8 +19,8 @@ const App = () => {
     // Move cursor element with mouse
     const handleMouseMove = (e) => {
       gsap.to(cursorRef.current, {
-        left:e.x - 50,
-        top: e.y - 80,
+        left:e.x - 10,
+        top: e.y - 10,
       });
     };
     
@@ -32,7 +32,7 @@ const App = () => {
   }, { scope: bodyRef });
 
   return (
-    <div ref={bodyRef} className='relative'>
+    <div ref={bodyRef} className='relative cursor-pointer'>
       {/* Custom cursor */}
       <div 
         ref={cursorRef} 

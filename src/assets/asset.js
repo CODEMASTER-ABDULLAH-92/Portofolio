@@ -28,11 +28,13 @@ import scholar from "/src/assets/scholar.png"
 import port from "/src/assets/port.png"
 import code365 from "/src/assets/code365.png"
 import gitpink from "/src/assets/gitpink.png"
+import bpo from "/src/assets/bpo.png"
 import p1 from "/src/assets/test1.avif"
 import p2 from "/src/assets/test2.avif"
 
 export const asset = {
     port,
+    bpo,
     scholar,
     yt,
     p1,

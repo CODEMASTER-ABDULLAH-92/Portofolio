@@ -16,15 +16,15 @@ const Projects = () => {
       technologies: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express", "JWT Auth"],
       accentColor: "#10B981" // emerald
     },
-    {
-      title: "Job Web App",
-      description: "An aesthetic and modern job search platform designed to help users discover, explore, and apply to job opportunities seamlessly with an engaging 3D UI experience.",
-      image: asset.bpo, // replace with your actual image asset
-      demoUrl: "https://tro-job.vercel.app/", // replace with actual demo URL
-      codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/TroJobs", // replace with actual GitHub repo
-      technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT Auth"],
-      accentColor: "#3B82F6" // blue theme
-    },
+    // {
+    //   title: "Job Web App",
+    //   description: "An aesthetic and modern job search platform designed to help users discover, explore, and apply to job opportunities seamlessly with an engaging 3D UI experience.",
+    //   image: asset.bpo, // replace with your actual image asset
+    //   demoUrl: "https://tro-job.vercel.app/", // replace with actual demo URL
+    //   codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/TroJobs", // replace with actual GitHub repo
+    //   technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT Auth"],
+    //   accentColor: "#3B82F6" // blue theme
+    // },
     {
       title: "Code365",
       description: "An aesthetic learning platform for mastering Data Structures, Algorithms, and core programming languages using interactive 3D models and modern UI.",

@@ -100,7 +100,6 @@ As a full-stack developer with expertise in {" "}
         <div className='flex text-2xl items-center gap-1'>
         {skill.icon}
         {skill.name}
-
         </div>
 
       </span>
@@ -158,7 +157,7 @@ As a full-stack developer with expertise in {" "}
               animate={{ scale: [1, 1.5, 1] }} 
               transition={{ repeat: Infinity, duration: 1.9 }}
             />
-            <p className="ml-4 text-lg">Currently Building Mash Dev 🚀</p>
+            <p className="ml-4 text-lg">Currently Building code365. 🚀</p>
           </div>
         </div>
 

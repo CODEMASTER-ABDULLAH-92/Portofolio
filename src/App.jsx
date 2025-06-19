@@ -4,7 +4,6 @@ import Hero from './Component/Hero'
 import Tech from './Component/Tech'
 import Testimonal from './Component/Testimonal'
 import Footer from './Component/Footer'
-import FooterBelow from './Component/FooterBelow'
 import About from './Component/About'
 import Projects from './Component/Projects'
 import ServicesPage from './Component/Servies'
@@ -50,7 +49,6 @@ const App = () => {
         <Testimonal/>
         <ServicesPage/>
         <Footer/>
-        <FooterBelow/>
       </div>
     </div>
   )

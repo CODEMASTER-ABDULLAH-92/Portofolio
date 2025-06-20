@@ -29,7 +29,7 @@ const Footer = () => {
     {
       icon: <FaEnvelope className="text-xl" />,
       label: 'Email me at',
-      value: 'abdullahpeerzada92@gmail.com',
+      value: 'infoabdullahdev92@gmail.com',
       type: 'email',
     },
     {

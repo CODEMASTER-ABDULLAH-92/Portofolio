@@ -1,6 +1,152 @@
+// // https://hire-mate-87dg.vercel.app/
+// import React, { useContext } from "react";
+// import { ContextApi } from "../Context/ContextApi";
+// import { asset } from "../assets/asset";
+
+// const Projects = () => {
+//   const { theme } = useContext(ContextApi);
+
+//   const projects = [
+//     {
+//       title: "HireMate",
+//       description: "A modern job portal connecting job seekers with employers through smart job matching, resume parsing, and advanced filtering to simplify the hiring process.",
+//       demoUrl: "https://hire-mate-87dg.vercel.app/",
+//       codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/HireMate",
+//       technologies: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express", "JWT Auth"],
+//       accentColor: "#3B82F6" // blue
+//     },    
+//     {
+//       title: "Code365",
+//       description: "An aesthetic learning platform for mastering Data Structures, Algorithms, and core programming languages using interactive 3D models and modern UI.",
+//       demoUrl: "https://hire-mate-87dg.vercel.app/hireMate-academy-code365",
+//       codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/mesh-dev",
+//       technologies: ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express"],
+//       accentColor: "#3B82F6" // blue
+//     },
+//     {
+//       title: "CodeCraft Portfolio",
+//       description: "A modern developer portfolio showcasing my skills, projects, and professional journey. Built with performance and aesthetics in mind, featuring smooth animations and responsive design.",
+//       demoUrl: "https://abdullah-kohl.vercel.app/",
+//       codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/Portofolio",
+//       technologies: ["React.js", "GSAP", "Tailwind CSS", "Node.js", "MongoDB", "Express", "Figma", "Vite"],
+//       accentColor: "#8B5CF6" // purple
+//     },
+//   ];
+
+//   return (
+//     <div
+//       id="project"
+//       className={`${
+//         theme
+//           ? "bg-gray-900 text-white"
+//           : "bg-gray-50 text-gray-900"
+//       } transition-colors duration-300 py-20 px-6 md:px-16`}
+//     >
+//       <div className="max-w-7xl mx-auto">
+//         <div className="text-center mb-16">
+//           <h2 className="text-4xl md:text-5xl font-bold mb-6">
+//             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+//               My Projects
+//             </span>
+//           </h2>
+//           <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
+//             Showcase of my technical prowess through innovative solutions
+//           </p>
+//         </div>
+
+//         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+//           {projects.map((project, index) => (
+//             <div 
+//               key={index}
+//               className={`relative group rounded-xl p-1 overflow-hidden transition-all duration-500 ${
+//                 theme 
+//                   ? "bg-gradient-to-br from-blue-900/50 to-gray-800 hover:from-blue-900/70 hover:to-gray-700"
+//                   : "bg-gradient-to-br from-blue-50 to-gray-100 hover:from-blue-100 hover:to-gray-200"
+//               }`}
+//             >
+//               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl blur opacity-10 group-hover:opacity-20 transition duration-500"></div>
+              
+//               <div className={`relative h-full rounded-lg p-6 ${
+//                 theme ? "bg-gray-800" : "bg-white"
+//               }`}>
+//                 <div className="flex justify-between items-start mb-4">
+//                   <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors duration-300">
+//                     <a 
+//                       href={project.demoUrl} 
+//                       target="_blank" 
+//                       rel="noopener noreferrer"
+//                       className="hover:underline decoration-blue-400"
+//                     >
+//                       {project.title}
+//                     </a>
+//                   </h3>
+//                   <span className={`px-2 py-1 text-xs font-bold rounded-full ${
+//                     theme ? "bg-blue-900/30 text-blue-300" : "bg-blue-100 text-blue-800"
+//                   }`}>
+//                     {project.technologies[0]}
+//                   </span>
+//                 </div>
+                
+//                 <p className={`mb-6 text-sm leading-relaxed ${
+//                   theme ? "text-gray-300" : "text-gray-700"
+//                 }`}>
+//                   {project.description}
+//                 </p>
+                
+//                 <div className="flex flex-wrap gap-2 mb-6">
+//                   {project.technologies.map((tech, i) => (
+//                     <span
+//                       key={i}
+//                       className={`px-2 py-1 text-xs font-medium rounded ${
+//                         theme 
+//                           ? "bg-blue-900/10 text-blue-300 border border-blue-800/50" 
+//                           : "bg-blue-50 text-blue-700 border border-blue-100"
+//                       }`}
+//                     >
+//                       {tech}
+//                     </span>
+//                   ))}
+//                 </div>
+                
+//                 <div className="flex gap-4">
+//                   <a
+//                     href={project.demoUrl}
+//                     target="_blank"
+//                     rel="noopener noreferrer"
+//                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+//                       theme 
+//                         ? "bg-blue-600 hover:bg-blue-700 text-white" 
+//                         : "bg-blue-500 hover:bg-blue-600 text-white"
+//                     } shadow-lg hover:shadow-blue-400/20`}
+//                   >
+//                     Live Demo
+//                   </a>
+//                   <a
+//                     href={project.codeUrl}
+//                     target="_blank"
+//                     rel="noopener noreferrer"
+//                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+//                       theme 
+//                         ? "bg-gray-700 hover:bg-gray-600 text-gray-200" 
+//                         : "bg-gray-200 hover:bg-gray-300 text-gray-800"
+//                     }`}
+//                   >
+//                     View Code
+//                   </a>
+//                 </div>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Projects;
+
 import React, { useContext } from "react";
 import { ContextApi } from "../Context/ContextApi";
-import { Link } from "react-router-dom";
 import { asset } from "../assets/asset";
 
 const Projects = () => {
@@ -8,42 +154,32 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "ScholarPath Finder",
-      description: "A comprehensive scholarship application platform helping students discover and apply for educational funding opportunities worldwide with smart matching algorithms.",
-      image: asset.scholar,
-      demoUrl: "https://scholar-ship-app.vercel.app/",
-      codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/ScholarShip-App",
-      technologies: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express", "JWT Auth"],
-      accentColor: "#10B981" // emerald
-    },
-    // {
-    //   title: "Job Web App",
-    //   description: "An aesthetic and modern job search platform designed to help users discover, explore, and apply to job opportunities seamlessly with an engaging 3D UI experience.",
-    //   image: asset.bpo, // replace with your actual image asset
-    //   demoUrl: "https://tro-job.vercel.app/", // replace with actual demo URL
-    //   codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/TroJobs", // replace with actual GitHub repo
-    //   technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT Auth"],
-    //   accentColor: "#3B82F6" // blue theme
-    // },
+      title: "HireMate",
+      description: "A modern job portal connecting job seekers with employers through smart job matching, resume parsing, and advanced filtering to simplify the hiring process.",
+      demoUrl: "https://hire-mate-87dg.vercel.app/",
+      codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/HireMate",
+      technologies: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express", "JWT Auth","Vite","GSAP"],
+      accentColor: "#3B82F6",
+      icon: "💼"
+    },    
     {
       title: "Code365",
       description: "An aesthetic learning platform for mastering Data Structures, Algorithms, and core programming languages using interactive 3D models and modern UI.",
-      image: asset.code365, // replace with your actual image asset variable
-      demoUrl: "https://mesh-dev.vercel.app/", // update if you have a live URL
-      codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/mesh-dev", // update if you have a GitHub repo
-      technologies: ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express"],
-      accentColor: "#10B981" // a vibrant bluish tone from Tailwind palette
+      demoUrl: "https://hire-mate-87dg.vercel.app/hireMate-academy-code365",
+      codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/mesh-dev",
+      technologies: ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express","GSAP","Vite","JavaScript"],
+      accentColor: "#10B981",
+      icon: "📚"
     },
     {
       title: "CodeCraft Portfolio",
       description: "A modern developer portfolio showcasing my skills, projects, and professional journey. Built with performance and aesthetics in mind, featuring smooth animations and responsive design.",
-      image: asset.port,
       demoUrl: "https://abdullah-kohl.vercel.app/",
       codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/Portofolio",
-      technologies: ["React.js", "GSAP", "Tailwind CSS", "Node.js", "MongoDB", "Express" , "Figma", "Vite"],
-      accentColor: "#3B82F6" // blue
+      technologies: ["React.js", "GSAP", "Tailwind CSS", "Node.js", "MongoDB", "Express", "Figma", "Vite"],
+      accentColor: "#8B5CF6",
+      icon: "🎨"
     },
-    
   ];
 
   return (
@@ -51,101 +187,163 @@ const Projects = () => {
       id="project"
       className={`${
         theme
-          ? "bg-[--dark-about-bg] text-[--dark-text]"
-          : "bg-[--light-about-bg] text-[--light-text]"
-      } transition-colors duration-300 py-16 px-6 md:px-16`}
+          ? "bg-gradient-to-br from-gray-900 to-gray-800 text-white"
+          : "bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900"
+      } transition-colors duration-300 py-24 px-6 md:px-16`}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
-            My Projects
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <span className="relative inline-block">
+              <span className="absolute -bottom-1 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full opacity-75"></span>
+              <span className="relative bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+                My Projects
+              </span>
+            </span>
           </h2>
           <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            Explore my featured projects that demonstrate my expertise in modern web development, 
-            with attention to design, performance, and user experience.
+            Showcase of my technical prowess through <span className="font-medium text-blue-500">innovative solutions</span> and <span className="font-medium text-purple-500">beautiful designs</span>
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
           {projects.map((project, index) => (
             <div 
               key={index}
-              className={`relative group overflow-hidden rounded-2xl shadow-xl ${
-                theme ? "bg-[--dark-card-bg]" : "bg-[--light-card-bg]"
-              } transition-all duration-500 hover:shadow-2xl`}
+              className={`relative group rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-xl ${
+                theme 
+                  ? "hover:shadow-blue-900/30"
+                  : "hover:shadow-blue-400/20"
+              }`}
+              style={{
+                boxShadow: `0 10px 30px -10px ${project.accentColor}40`
+              }}
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black opacity-20 z-10"></div>
+              <div 
+                className="absolute inset-0 bg-gradient-to-br opacity-10 group-hover:opacity-20 transition duration-500"
+                style={{
+                  background: `linear-gradient(135deg, ${project.accentColor} 0%, ${project.accentColor}80 100%)`
+                }}
+              ></div>
               
-              {/* Project Image */}
-              <div className=" overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              
-              {/* Project Content */}
-              <div className="p-6 relative z-20">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl font-bold group-hover:text-[#F53E32] transition-colors duration-300">
-                    <a 
-                      href={project.demoUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      {project.title}
-                    </a>
-                  </h3>
-                  <a
-                    href={project.codeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`px-[20px] py-[11px] rounded-full text-xs font-bold font-medium ${
-                      theme ? "bg-gray-700 text-white" : "bg-gray-200 text-gray-800"
-                    } hover:bg-gray-600 hover:text-white transition-colors`}
+              <div className={`relative h-full rounded-2xl p-8 ${
+                theme ? "bg-gray-800/90 backdrop-blur-sm" : "bg-white/90 backdrop-blur-sm"
+              }`}>
+                <div className="flex items-center mb-6">
+                  <div 
+                    className="w-14 h-14 rounded-xl flex items-center justify-center text-2xl mr-4"
+                    style={{
+                      background: `${project.accentColor}20`,
+                      color: project.accentColor
+                    }}
                   >
-                    Source Code
-                  </a>
+                    {project.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors duration-300">
+                      <a 
+                        href={project.demoUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                        style={{
+                          textDecorationColor: project.accentColor
+                        }}
+                      >
+                        {project.title}
+                      </a>
+                    </h3>
+                    <span className={`px-2 py-1 text-xs font-bold rounded-full ${
+                      theme ? "bg-blue-900/30 text-blue-300" : "bg-blue-100 text-blue-800"
+                    }`}>
+                      {project.technologies[0]}
+                    </span>
+                  </div>
                 </div>
                 
-                <p className="mb-6 text-sm sm:text-base opacity-90 leading-relaxed">
+                <p className={`mb-8 text-sm leading-relaxed ${
+                  theme ? "text-gray-300" : "text-gray-700"
+                }`}>
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {project.technologies.map((tech, i) => (
                     <span
-                      key={tech}
-                      className="px-3 py-1 rounded-full text-xs font-medium"
+                      key={i}
+                      className={`px-3 py-1 text-xs font-medium rounded-full ${
+                        theme 
+                          ? "bg-gray-700/50 text-gray-300 border border-gray-600/50" 
+                          : "bg-gray-100 text-gray-700 border border-gray-200"
+                      } hover:scale-105 transition-all`}
                       style={{
-                        backgroundColor: theme 
-                          ? `${project.accentColor}20` // 20% opacity
-                          : `${project.accentColor}10`,
-                        color: theme 
-                          ? project.accentColor 
-                          : `${project.accentColor}DD`,
-                        border: theme 
-                          ? `1px solid ${project.accentColor}30`
-                          : `1px solid ${project.accentColor}20`
+                        ...(i === 0 && {
+                          background: `${project.accentColor}20`,
+                          color: project.accentColor,
+                          borderColor: `${project.accentColor}30`
+                        })
                       }}
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
+                
+                <div className="flex gap-4">
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all flex-1 text-center ${
+                      theme 
+                        ? "bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white" 
+                        : "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white"
+                    } shadow-lg hover:shadow-blue-400/30`}
+                    style={{
+                      background: `linear-gradient(135deg, ${project.accentColor} 0%, ${project.accentColor}80 100%)`
+                    }}
+                  >
+                    Live Demo
+                  </a>
+                  <a
+                    href={project.codeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all flex-1 text-center ${
+                      theme 
+                        ? "bg-gray-700/50 hover:bg-gray-600/50 text-gray-200" 
+                        : "bg-gray-100 hover:bg-gray-200 text-gray-800"
+                    } border ${
+                      theme ? "border-gray-700" : "border-gray-200"
+                    }`}
+                  >
+                    View Code
+                  </a>
+                </div>
               </div>
-              
-              {/* Hover effect */}
-              <div 
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                style={{
-                  background: `radial-gradient(circle at center, ${project.accentColor}10 0%, transparent 70%)`
-                }}
-              ></div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-20">
+          <p className="text-lg opacity-80 mb-6">
+            Want to see more of my work?
+          </p>
+          <a
+            href="https://github.com/CODEMASTER-ABDULLAH-92"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center px-6 py-3 rounded-full text-sm font-medium transition-all ${
+              theme 
+                ? "bg-gray-800 hover:bg-gray-700 text-white border border-gray-700" 
+                : "bg-white hover:bg-gray-100 text-gray-800 border border-gray-200"
+            } shadow-lg hover:shadow-xl`}
+          >
+            <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+            </svg>
+            Explore My GitHub
+          </a>
         </div>
       </div>
     </div>

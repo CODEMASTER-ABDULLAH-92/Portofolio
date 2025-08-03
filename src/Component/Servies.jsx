@@ -40,18 +40,6 @@ const services = [
     desc: "Beautiful showcases for your work or personalized travel experiences.",
     color: "text-pink-400"
   },
-  { 
-    icon: <FaUserGraduate />, 
-    title: "Student Management Systems", 
-    desc: "Complete educational platforms with advanced administration tools.",
-    color: "text-indigo-400"
-  },
-  { 
-    icon: <MdWeb />, 
-    title: "And Much More!", 
-    desc: "Innovative digital solutions tailored to your specific requirements.",
-    color: "text-teal-400"
-  }
 ];
 
 export default function ServicesPage() {
@@ -78,7 +66,7 @@ export default function ServicesPage() {
         </div>
         
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}

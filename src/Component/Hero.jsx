@@ -69,14 +69,21 @@ useGSAP(() => {
       <section className="sm:w-2/3 w-full flex flex-col justify-start items-start">
         
         {/* Animated Heading */}
-        <motion.h1 
-          className={`text-4xl font-extrabold mb-2 leading-tight ${theme ? "text-white" : "text-black"}`} 
-          initial={{ opacity: 0, y: -20 }} 
-          animate={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 0.8 }}
-        >
-          Hi, I'm Abdullah
-        </motion.h1>
+<motion.h1
+  className={`text-4xl group font-extrabold mb-2 leading-tight ${
+    theme ? "text-white" : "text-black"
+  }`}
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+>
+  Hi, I'm Abdullah
+  <div
+    className={`h-1 rounded mt-1 bg-current transition-all duration-500 origin-right 
+      scale-x-0 group-hover:scale-x-100`}
+  ></div>
+</motion.h1>
+
 
         {/* Description with Animated Masah Dev */}
         <p className="mb-3 text-lg leading-relaxed">

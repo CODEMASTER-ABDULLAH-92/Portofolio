@@ -2,14 +2,13 @@ import React, { useRef } from 'react'
 import Nav from './Component/Nav'
 import Hero from './Component/Hero'
 import Tech from './Component/Tech'
-import Testimonal from './Component/Testimonal'
 import Footer from './Component/Footer'
 import About from './Component/About'
 import Projects from './Component/Projects'
-import ServicesPage from './Component/Servies'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { asset } from './assets/asset'
+import Testimonials from './Component/Testimonal'
+import HireMe from './Component/HireForm'
 
 const App = () => {
   const bodyRef = useRef();
@@ -47,13 +46,8 @@ const App = () => {
         <About/>
         <Tech/>
         <Projects/>
-        {/* <div className='grid grid-cols-3 gap-5'>
-        <Testimonal role={"Developer"} img={asset.abdullah} author={"Muhammad Abdlla"} accentColor={"#273e8e"} quote={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iure, dolore corporis culpa, corrupti molestiae in pariatur porro, magni error ratione animi cumque vero voluptates a. Dicta rem ipsa quisquam."}/>
-        <Testimonal role={"Developer"} img={asset.abdullah} author={"Muhammad Abdlla"} accentColor={"#273e8e"} quote={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iure, dolore corporis culpa, corrupti molestiae in pariatur porro, magni error ratione animi cumque vero voluptates a. Dicta rem ipsa quisquam."}/>
-        <Testimonal role={"Developer"} img={asset.abdullah} author={"Muhammad Abdlla"} accentColor={"#273e8e"} quote={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iure, dolore corporis culpa, corrupti molestiae in pariatur porro, magni error ratione animi cumque vero voluptates a. Dicta rem ipsa quisquam."}/>
-
-        </div> */}
-        <ServicesPage/>
+        <Testimonials/>
+        <HireMe/>
         <Footer/>
       </div>
     </div>

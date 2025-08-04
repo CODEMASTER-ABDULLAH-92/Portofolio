@@ -20,12 +20,12 @@ const navRef = useRef();
         theme ? "bg-[--dark-hero-bg]" : "bg-[--light-hero-bg] shadow-md"
       } sticky top-0 z-50 py-4 backdrop-blur-md transition-colors duration-300`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto max-w-6xl px-4">
         <div
           className={`${
             theme ? "bg-[--dark-hero-bg]" : "bg-[--light-hero-bg]"
           } flex items-center justify-between rounded-xl border border-opacity-20 p-4 backdrop-blur-sm ${
-            theme ? "border-gray-600" : "border-gray-300"
+            theme ? "border-gray-50" : "border-gray-700"
           }`}
         >
           {/* Logo */}
@@ -102,7 +102,7 @@ const navRef = useRef();
                   : asset.burger
               }
               alt="Menu"
-              className="w-6 h-6"
+              className="w-8 h-8"
             />
           </button>
         </div>

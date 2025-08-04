@@ -63,14 +63,14 @@ const Footer = () => {
               <p className="text-sm opacity-70">{label}</p>
               <div className="flex items-center gap-2">
                 <span
-                  className="text-base sm:text-lg font-semibold cursor-pointer hover:text-[--dark-btn-bg] transition-colors"
+                  className="text-xs sm:text-lg sm:font-semibold cursor-pointer hover:text-[--dark-btn-bg] transition-colors"
                   onClick={() => copyTextToClipboard(value, type)}
                 >
                   {value}
                 </span>
                 <div className="relative">
                   <div
-                    className="cursor-pointer text-gray-500 hover:text-[--dark-btn-bg] transition"
+                    className="cursor-pointer text-gray-500 hover:text-[--dark-btn-bg]  transition"
                     onClick={() => copyTextToClipboard(value, type)}
                   >
                     {copied[type] ? <FaCheck className="text-green-500" /> : <FaRegCopy />}

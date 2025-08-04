@@ -8,7 +8,7 @@ import Projects from './Component/Projects'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Testimonials from './Component/Testimonal'
-import HireMe from './Component/HireForm'
+// import HireMe from './Component/HireForm'
 
 const App = () => {
   const bodyRef = useRef();

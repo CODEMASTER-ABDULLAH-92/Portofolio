@@ -34,7 +34,7 @@ const Hero = () => {
     { name: "React.js", icon: <FaReact className="text-blue-500" /> },
     { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
-    { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
+    // { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
     { name: "Express.js", icon: <SiExpress className="text-gray-800 dark:text-gray-300" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-500" /> },
     { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
@@ -42,9 +42,8 @@ const Hero = () => {
     { name: "C++", icon: <SiCplusplus className="text-blue-600" /> },
     { name: "OOP", icon: <FaCube className="text-purple-600" /> },
     { name: "Git", icon: <SiGit className="text-orange-600" /> },
-    { name: "Next.js", icon: <SiNextdotjs className="text-black dark:text-white" /> },
-
-{ name: "Python", icon: <SiPython className="text-yellow-500" /> }
+    // { name: "Next.js", icon: <SiNextdotjs className="text-black dark:text-white" /> },
+// { name: "Python", icon: <SiPython className="text-yellow-500" /> }
 
   ];
 
@@ -88,7 +87,7 @@ useGSAP(() => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            {" " } <Link to="https://mesh-dev.vercel.app/"> code365 🔗</Link>
+            {" " } <Link to="https://hire-mate-87dg.vercel.app/hireMate-academy-code365"> code365 🔗</Link>
           </motion.span> 
  , a platform dedicated to helping learners master Data Structures and Algorithms (DSA).
 

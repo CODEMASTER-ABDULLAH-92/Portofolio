@@ -12,7 +12,7 @@ const Projects = () => {
       description: "A modern job portal connecting job seekers with employers through smart job matching, resume parsing, and advanced filtering to simplify the hiring process.",
       demoUrl: "https://hire-mate-87dg.vercel.app/",
       codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/HireMate",
-      technologies: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express", "JWT Auth","Vite","GSAP"],
+      technologies: ["Node.js", "MongoDB", "Tailwind CSS", "Express", "JWT Auth","Vite","GSAP","React.js", "Figma"],
       accentColor: "#3B82F6",
       icon: "💼"
     },    
@@ -21,7 +21,7 @@ const Projects = () => {
       description: "An aesthetic learning platform for mastering Data Structures, Algorithms, and core programming languages using interactive 3D models and modern UI.",
       demoUrl: "https://hire-mate-87dg.vercel.app/hireMate-academy-code365",
       codeUrl: "https://github.com/CODEMASTER-ABDULLAH-92/mesh-dev",
-      technologies: ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Express","GSAP","Vite","JavaScript"],
+      technologies: ["React", , "Node.js", "MongoDB", "Tailwind CSS", "Express","GSAP","Vite","JavaScript"],
       accentColor: "#10B981",
       icon: "📚"
     },
@@ -110,7 +110,7 @@ const Projects = () => {
                     <span className={`px-2 py-1 text-xs font-bold rounded-full ${
                       theme ? "bg-blue-900/30 text-blue-300" : "bg-blue-100 text-blue-800"
                     }`}>
-                      {project.technologies[0]}
+                      On Development Mode
                     </span>
                   </div>
                 </div>

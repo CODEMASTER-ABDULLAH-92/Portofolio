@@ -8,6 +8,7 @@ import Projects from './Component/Projects'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Testimonials from './Component/Testimonal'
+import Certificates from './Component/Certificates'
 // import HireMe from './Component/HireForm'
 
 const App = () => {
@@ -43,6 +44,7 @@ const App = () => {
       <div className='relative z-10'>
         <Nav/>
         <Hero/>
+        <Certificates/>
         <About/>
         <Tech/>
         <Projects/>

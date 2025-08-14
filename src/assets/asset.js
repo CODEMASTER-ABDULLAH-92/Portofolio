@@ -31,9 +31,14 @@ import gitpink from "/src/assets/gitpink.png"
 import bpo from "/src/assets/bpo.png"
 import p1 from "/src/assets/test1.avif"
 import p2 from "/src/assets/test2.avif"
+import c1 from "/src/assets/c1.jpeg"
+import c2 from "/src/assets/c2.jpeg"
+import c3 from "/src/assets/c3.jpeg"
+import c4 from "/src/assets/c4.jpeg"
+import b1 from "/src/assets/b1.png"
 
 export const asset = {
-    port,
+    port,c1,c2,c3,c4,b1,
     bpo,
     scholar,
     yt,

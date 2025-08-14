@@ -48,7 +48,7 @@ const About = () => {
             <span className="relative inline-block">
               <span className="absolute -bottom-1 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full opacity-75"></span>
               <span className="relative bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-                About Me
+                About Me 
               </span>
             </span>
           </h2>

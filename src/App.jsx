@@ -10,7 +10,7 @@ import gsap from 'gsap'
 import Testimonials from './Component/Testimonal'
 import Certificates from './Component/Certificates'
 // import HireMe from './Component/HireForm'
-
+import {ReactLenis} from 'lenis/react';
 const App = () => {
   const bodyRef = useRef();
   const cursorRef = useRef();
@@ -34,6 +34,7 @@ const App = () => {
   return (
     <div ref={bodyRef} className='relative cursor-pointer'>
       {/* Custom cursor */}
+      <ReactLenis root />
       <div 
         ref={cursorRef} 
         id='cursor' 

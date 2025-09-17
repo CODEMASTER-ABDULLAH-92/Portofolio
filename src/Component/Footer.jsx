@@ -48,7 +48,7 @@ const Footer = () => {
       } py-16 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 flex flex-col items-center gap-8`}
     >
       <h2 className="text-3xl sm:text-4xl font-bold text-center">
-        Let's <span className="text-[--dark-btn-bg]">Connect</span>
+        Get  <span className="text-[--dark-btn-bg]">in touch with us </span>
       </h2>
 
       <p className="text-center max-w-2xl text-lg opacity-90 leading-relaxed">

@@ -1,5 +1,5 @@
 import { FaBullseye, FaRegComments, FaClock } from "react-icons/fa";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { ContextApi } from "../Context/ContextApi";
 
 const About = () => {
